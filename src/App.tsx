@@ -18,10 +18,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { VscVerifiedFilled } from "react-icons/vsc";
 import { MdAttachEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
+// import { FaTelegram } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 type Anchor = "top" | "left" | "bottom" | "right";
 
@@ -114,7 +116,7 @@ const App = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      className="bg-[#1f1f1f] text-[#fff] h-[100vh] dark:text-[#1f1f1f] dark:bg-[#fff]"
+      className="bg-[#1f1f1f] text-[#fff] dark:text-[#1f1f1f] dark:bg-[#fff]"
     >
       <List>
         {[
@@ -160,7 +162,6 @@ const App = () => {
           </a>
         ))}
       </List>
-      <Divider className="bg-[#fff] dark:bg-[#1f1f1f]" />
     </Box>
   );
 
@@ -317,6 +318,21 @@ const App = () => {
                 Download CV
               </button>
             </a>
+            <div className="social_links flex items-center gap-2">
+              <a href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/">
+                <FaLinkedinIn className="text-[30px] text-[#c2c0c0] dark:text-[#464545] font-[700] duration-[0.7s] hover:text-[#fff] dark:hover:text-[#000] hover:scale-110" />
+              </a>
+              <a href="https://github.com/olimyuldoshev2003">
+                <FiGithub className="text-[30px] text-[#c2c0c0] dark:text-[#464545] font-[700] duration-[0.7s] hover:text-[#fff] dark:hover:text-[#000] hover:scale-110" />
+              </a>
+              <a
+                href="https://t.me/olim_yuldoshev_ooo3"
+                className="flex items-center gap-3 text-[16px] text-[#000] dark:text-[#fff] font-[700] duration-[0.7s] p-[10px] bg-[#c2c0c0] dark:bg-[#464545] rounded-[15px] hover:bg-[#fff] dark:hover:bg-[#000] hover:scale-105"
+              >
+                Say Hello{" "}
+                <FaTelegramPlane className="text-[19px] text-[#000] dark:text-[#fff] font-[700] duration-[0.7s]" />
+              </a>
+            </div>
           </div>
           <div className="md:w-[50%] sm:w-[92%]">
             <img src={imgS1} alt="" />
@@ -945,9 +961,7 @@ const App = () => {
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 Email
               </h1>
-              <p
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer"
-              >
+              <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
                 oyuldoshev39@gmail.com
               </p>
             </div>
@@ -956,14 +970,12 @@ const App = () => {
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 WhatsApp
               </h1>
-              <p
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer"
-              >
+              <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
                 +992919697875
               </p>
             </div>
             <div className="telegram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
-              <FaTelegram className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
+              <FaTelegramPlane className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 Telegram
               </h1>
@@ -999,7 +1011,7 @@ const App = () => {
               </a>
             </div>
             <div className="linkedIn border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
-              <FaLinkedin className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
+              <FaLinkedinIn className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 LinkedIn
               </h1>
