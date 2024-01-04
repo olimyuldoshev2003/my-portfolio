@@ -52,7 +52,7 @@ const App = () => {
 
   //For Courses
 
-  // const [CPlusPlus, setCPlusPlus] = useState<number>(80);
+  // const [CPlusPlus, setCPlusPlus] = useState<number>(79);
   // const [HTML, setHTML] = useState<number>(80);
   // const [CSS, setCSS] = useState<number>(85);
   // const [SCSS, setSCSS] = useState<number>(83);
