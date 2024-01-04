@@ -1,0 +1,45 @@
+/* Alex Brush */
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Questrial */
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.alex_brush {
+  font-family: "Alex Brush", cursive;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.questrial {
+  font-family: "Questrial", sans-serif;
+}
+
+.for_btn {
+  border-radius: 10px;
+  background: var(--Color, linear-gradient(180deg, #15b9b9 0%, #3c1dff 100%));
+}
+
+.btn_grad {
+  border-radius: 50px;
+  background: linear-gradient(90deg, #3c1dff 18.63%, #14c9c9 78.88%);
+}
+
+.icon_bg {
+  width: 56.14px;
+  height: 56.14px;
+  /* fill: var(--Color, linear-gradient(180deg, #15b9b9 0%, #3c1dff 100%)); */
+  background: linear-gradient(180deg, #15b9b9 0%, #3c1dff 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
