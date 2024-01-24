@@ -125,27 +125,27 @@ const App = () => {
           },
           {
             id: "#about",
-            section: "About me",
+            section: t("h.t2"),
           },
           {
             id: "#skills",
-            section: "Skills",
+            section: t("h.t3"),
           },
           {
             id: "#language",
-            section: "Language",
+            section: t("h.t4"),
           },
           {
             id: "#studies",
-            section: "Studies",
+            section: t("h.t5"),
           },
           {
             id: "#courses",
-            section: "Courses",
+            section: t("h.t6"),
           },
           {
             id: "#projects",
-            section: "Projects",
+            section: t("h.t7"),
           },
           {
             id: "#contacts",
@@ -168,15 +168,15 @@ const App = () => {
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
       <header className="header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between">
         <div>
-          <h1 className="alex_brush text-[#fff] text-[28px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
-            Olim Karomatov
+          <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[23px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
+            {t("logoH.t")}
           </h1>
         </div>
         <div className="flex items-center gap-[10px]">
           <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
-            <li className="text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]">
+            <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#home"
               >
                 {t("h.t1")}
@@ -184,58 +184,58 @@ const App = () => {
             </li>
             <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#about"
               >
-                About me
+                {t("h.t2")}
               </a>
             </li>
             <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#skills"
               >
-                Skills
+                {t("h.t3")}
               </a>
             </li>
             <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#language"
               >
-                Language
+                {t("h.t4")}
               </a>
             </li>
             <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#studies"
               >
-                Studies
+                {t("h.t5")}
               </a>
             </li>
             <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#courses"
               >
-                Courses
+                {t("h.t6")}
               </a>
             </li>
             <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#projects"
               >
-                Projects
+                {t("h.t7")}
               </a>
             </li>
             <li>
               <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3]"
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
                 href="#contacts"
               >
-                Contacts
+                {t("h.t8")}
               </a>
             </li>
           </ul>
@@ -254,16 +254,16 @@ const App = () => {
                 className="dark:text-[#000] dark:bg-[#fff]"
                 disabled
               >
-                Lang
+                {t("language.t1")}
               </option>
               <option value="en" className="dark:text-[#000] dark:bg-[#fff]">
-                En
+                {t("language.t2")}
               </option>
               <option value="ru" className="dark:text-[#000] dark:bg-[#fff]">
-                Ru
+                {t("language.t3")}
               </option>
               <option value="tj" className="dark:text-[#000] dark:bg-[#fff]">
-                Tj
+                {t("language.t4")}
               </option>
             </select>
           </div>
@@ -293,18 +293,18 @@ const App = () => {
         id="home"
       >
         <h1 className="text-center text-[#fff] dark:text-[#1f1f1f] md:text-[70px] sm:text-[35px] uppercase duration-[0.7s]">
-          My portfolio
+          {t("main.t")}
         </h1>
         <section className="section_1 flex md:justify-between items-center sm:flex-wrap-reverse md:flex-nowrap gap-[50px] sm:justify-center mt-[30px]">
           <div className="flex flex-col gap-[15px] items-start" id="contact">
             <h4 className="poppins text-[#fff] text-[25px] font-[300] dark:text-[#1f1f1f] duration-[0.7s]">
-              Welcome
+              {t("s1.t1")}
             </h4>
             <h1 className="poppins text-[#FFFFFF] md:text-[60px] sm:text-[34px] font-[600] dark:text-[#1f1f1f] duration-[0.7s]">
-              I’m Karomatov Olim
+              {t("s1.t2")}
             </h1>
             <h5 className="poppins text-[#FFFFFF] text-[20px] font-[300] duration-[0.7s] dark:text-[#1f1f1f]">
-              Junior Frontend Developer
+              {t("s1.t3")}
             </h5>
             <object
               data={myResume}
@@ -313,8 +313,8 @@ const App = () => {
             ></object>
             {/* <embed src={myResume} type="" /> */}
             <a href={myResume} download={myResume}>
-              <button className="p-[16px_46px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.7s]">
-                Download CV
+              <button className="p-[16px_13px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.7s]">
+                {t("s1.t4")}
               </button>
             </a>
             <div className="social_links flex items-center gap-2">
@@ -328,7 +328,7 @@ const App = () => {
                 href="https://t.me/olim_yuldoshev_ooo3"
                 className="flex items-center gap-3 text-[16px] text-[#000] dark:text-[#fff] font-[700] duration-[0.7s] p-[10px] bg-[#c2c0c0] dark:bg-[#464545] rounded-[15px] hover:bg-[#fff] dark:hover:bg-[#000] hover:scale-105"
               >
-                Say Hello{" "}
+                {t("s1.t5")}
                 <FaTelegramPlane className="text-[19px] text-[#000] dark:text-[#fff] font-[700] duration-[0.7s]" />
               </a>
             </div>
@@ -339,8 +339,8 @@ const App = () => {
         </section>
         <section className="section_2 mt-[50px] flex flex-col gap-7" id="about">
           <div className="for_text_about_me_s_2 flex justify-center">
-            <h1 className="border-t-[3px] border-t-[#fff] dark:border-[#000] text-center text-[#fff] dark:text-[#1f1f1f] md:text-[50px] sm:text-[35px] uppercase duration-[0.7s] max-w-[246px]">
-              About me
+            <h1 className="border-t-[3px] border-t-[#fff] dark:border-[#000] text-center text-[#fff] dark:text-[#1f1f1f] md:text-[50px] sm:text-[35px] uppercase duration-[0.7s] md:max-w-[340px] sm:max-w-[246px]">
+              {t("s2.t1")}
             </h1>
           </div>
           <div className="block_s_2 flex md:justify-between sm:justify-center items-center sm:flex-wrap md:flex-nowrap gap-[20px]">
@@ -349,21 +349,13 @@ const App = () => {
             </div>
             <div className="flex flex-col gap-[10px]">
               <h1 className="text-[#FFFFFF] lg:text-[100px] md:text-[60px] sm:text-[40px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
-                A little bit
+                {t("s2.t2")}
               </h1>
               <h1 className="text-[#040ca1] lg:text-[100px] md:text-[60px] sm:text-[40px] font-[400] duration-[0.7s]">
-                about me ...
+                {t("s2.t3")}
               </h1>
               <p className="text-[#fff] dark:text-[#1f1f1f] text-[14px] font-[400] max-w-[521px] duration-[0.7s]">
-                I was born in the 19th of November 2003 years. When I became 10
-                years old, I started studying at the secondary school. In 2021
-                years I finished my school and I took the exam of National Test
-                Center and I passed to the Tajik National University, faculty
-                Mechanic and Math, special Information. After this I started
-                studying at that University. In my second course from support
-                the organization of "Hamdam" I studied the Frontend Developer in
-                the Ilmhona and Softclub. I finished Ilmhona in the January and
-                Softclub in the September (in the third course).
+                {t("s2.t4")}
               </p>
             </div>
           </div>
@@ -371,7 +363,7 @@ const App = () => {
         <section className="section_3 mt-[50px]" id="skills">
           <div className="block_centering_s_3_skills flex justify-center">
             <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[300px] sm:max-w-[146px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
-              My skills
+              {t("s3.t1")}
             </h1>
           </div>
           <div className="icons_of_my_skills flex justify-center gap-[50px] flex-wrap mt-[50px] duration-[0.7s]">
@@ -385,7 +377,7 @@ const App = () => {
           <div className="my_skills_with_percent mt-[40px]">
             <div className="icons_of_my_skills_with_percent flex justify-center">
               <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[300px] sm:max-w-[220px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
-                My skills (%)
+                {t("s3.t2")}
               </h1>
             </div>
             <div className="blocks_my_skills mt-[40px] flex md:justify-between items-center flex-wrap sm:justify-center gap-10">
@@ -396,7 +388,7 @@ const App = () => {
                   </div>
                   <div className="block_2 flex flex-col gap-2">
                     <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
-                      C++ basic (only logic)
+                      {t("s3.t3")}
                     </h1>
                     <meter
                       value={CPlusPlus}
@@ -739,18 +731,18 @@ const App = () => {
         <section className="section_4 mt-[50px] flex md:justify-between items-start sm:flex-wrap sm:justify-center gap-[30px]">
           <div className="item_1_s_4" id="language">
             <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] dark:border-[#1f1f1f] duration-[0.7s]">
-              Language
+              {t("s4.t1")}
             </h2>
             <div className="mt-[24px]">
               <div>
                 <div>
                   <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
-                    English
+                    {t("s4.t2")}
                   </h2>
                 </div>
                 <div className="flex flex-col w-[218px] ">
                   <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.7s]">
-                    Intermediate
+                    {t("s4.t3")}
                   </p>
                   <hr className="btn_grad w-[220px] py-[10px] mt-[5px]" />
                 </div>
@@ -759,12 +751,12 @@ const App = () => {
               <div className="mt-[30px]">
                 <div>
                   <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
-                    Russian
+                    {t("s4.t4")}
                   </h2>
                 </div>
                 <div className="flex flex-col w-[86px] ">
                   <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.7s]">
-                    Good
+                    {t("s4.t5")}
                   </p>
                   <hr className="btn_grad w-[90px] py-[10px] mt-[5px]" />
                 </div>
@@ -772,12 +764,12 @@ const App = () => {
               <div className="mt-[30px]">
                 <div>
                   <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
-                    Tajik
+                    {t("s4.t6")}
                   </h2>
                 </div>
                 <div className="flex flex-col w-[280px] ">
                   <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.7s]">
-                    Fluent
+                    {t("s4.t7")}
                   </p>
                   <hr className="btn_grad w-[280px] py-[10px] mt-[5px]" />
                 </div>
@@ -786,8 +778,90 @@ const App = () => {
           </div>
           <div className="item_2_s_4" id="studies">
             <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] dark:border-[#1f1f1f] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] duration-[0.7s]">
-              Studies
+              {t("s4.t8")}
             </h2>
+            <div className="flex items-center gap-5 mt-[40px]">
+              <div className="icon_bg">
+                <svg
+                  className="w-[40%] h-[40%]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2_131)">
+                    <path
+                      d="M5.12971 26.7293V7.83158C5.12971 6.7178 5.57216 5.64964 6.35972 4.86209C7.14728 4.07453 8.21544 3.63208 9.32922 3.63208H28.9269C29.2981 3.63208 29.6542 3.77956 29.9167 4.04208C30.1792 4.3046 30.3267 4.66065 30.3267 5.03191V30.2289C30.3267 30.6002 30.1792 30.9562 29.9167 31.2187C29.6542 31.4813 29.2981 31.6287 28.9269 31.6287H10.0291C8.72973 31.6287 7.48354 31.1126 6.56472 30.1937C5.6459 29.2749 5.12971 28.0287 5.12971 26.7293ZM27.5271 28.8291V24.6296H10.0291C9.47224 24.6296 8.93816 24.8508 8.54438 25.2446C8.1506 25.6384 7.92938 26.1724 7.92938 26.7293C7.92938 27.2862 8.1506 27.8203 8.54438 28.2141C8.93816 28.6079 9.47224 28.8291 10.0291 28.8291H27.5271ZM7.92938 22.3017C8.58547 21.9901 9.30283 21.8289 10.0291 21.8299H27.5271V6.43175H9.32922C8.95796 6.43175 8.6019 6.57923 8.33938 6.84175C8.07686 7.10427 7.92938 7.46032 7.92938 7.83158V22.3017Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2_131">
+                      <rect
+                        width="33.596"
+                        height="33.596"
+                        fill="white"
+                        transform="translate(0.930237 0.83252)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div className="second_block_texts">
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] md:text-[29px] sm:text-[21px] font-[600] poppins duration-[0.7s] max-w-[300px]">
+                  {t("s4.t9")}
+                </h2>
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins">
+                  {t("s4.t11")}
+                </p>
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins">
+                  {t("s4.t10")}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="courses" id="courses">
+            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] dark:border-[#1f1f1f] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
+              {t("s4.t12")}
+            </h2>
+            <div className="flex items-center gap-5 mt-[40px]">
+              <div className="icon_bg">
+                <svg
+                  className="w-[40%] h-[40%]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2_131)">
+                    <path
+                      d="M5.12971 26.7293V7.83158C5.12971 6.7178 5.57216 5.64964 6.35972 4.86209C7.14728 4.07453 8.21544 3.63208 9.32922 3.63208H28.9269C29.2981 3.63208 29.6542 3.77956 29.9167 4.04208C30.1792 4.3046 30.3267 4.66065 30.3267 5.03191V30.2289C30.3267 30.6002 30.1792 30.9562 29.9167 31.2187C29.6542 31.4813 29.2981 31.6287 28.9269 31.6287H10.0291C8.72973 31.6287 7.48354 31.1126 6.56472 30.1937C5.6459 29.2749 5.12971 28.0287 5.12971 26.7293ZM27.5271 28.8291V24.6296H10.0291C9.47224 24.6296 8.93816 24.8508 8.54438 25.2446C8.1506 25.6384 7.92938 26.1724 7.92938 26.7293C7.92938 27.2862 8.1506 27.8203 8.54438 28.2141C8.93816 28.6079 9.47224 28.8291 10.0291 28.8291H27.5271ZM7.92938 22.3017C8.58547 21.9901 9.30283 21.8289 10.0291 21.8299H27.5271V6.43175H9.32922C8.95796 6.43175 8.6019 6.57923 8.33938 6.84175C8.07686 7.10427 7.92938 7.46032 7.92938 7.83158V22.3017Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2_131">
+                      <rect
+                        width="33.596"
+                        height="33.596"
+                        fill="white"
+                        transform="translate(0.930237 0.83252)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div className="second_block_texts ">
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] text-[29px] font-[600] poppins duration-[0.7s] max-w-[300px]">
+                  {t("s4.t13")}
+                </h2>
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[18px] font-[300] poppins duration-[0.7s] max-w-[300px]">
+                  {t("s4.t14")}
+                </p>
+              </div>
+            </div>
             <div className="flex items-center gap-8 mt-[40px]">
               <div className="icon_bg">
                 <svg
@@ -817,53 +891,11 @@ const App = () => {
                 </svg>
               </div>
               <div className="second_block_texts">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] text-[29px] font-[600] poppins duration-[0.7s]">
-                  Tajik National University
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] md:text-[29px] sm:text-[21px] poppins font-[600] duration-[0.7s] max-w-[300px]">
+                  {t("s4.t15")}
                 </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[18px] font-[300] poppins">
-                  Dushanbe 2021
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="courses" id="courses">
-            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] dark:border-[#1f1f1f] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
-              Courses
-            </h2>
-            <div className="flex items-center gap-8 mt-[40px]">
-              <div className="icon_bg">
-                <svg
-                  className="w-[40%] h-[40%]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  viewBox="0 0 35 35"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_2_131)">
-                    <path
-                      d="M5.12971 26.7293V7.83158C5.12971 6.7178 5.57216 5.64964 6.35972 4.86209C7.14728 4.07453 8.21544 3.63208 9.32922 3.63208H28.9269C29.2981 3.63208 29.6542 3.77956 29.9167 4.04208C30.1792 4.3046 30.3267 4.66065 30.3267 5.03191V30.2289C30.3267 30.6002 30.1792 30.9562 29.9167 31.2187C29.6542 31.4813 29.2981 31.6287 28.9269 31.6287H10.0291C8.72973 31.6287 7.48354 31.1126 6.56472 30.1937C5.6459 29.2749 5.12971 28.0287 5.12971 26.7293ZM27.5271 28.8291V24.6296H10.0291C9.47224 24.6296 8.93816 24.8508 8.54438 25.2446C8.1506 25.6384 7.92938 26.1724 7.92938 26.7293C7.92938 27.2862 8.1506 27.8203 8.54438 28.2141C8.93816 28.6079 9.47224 28.8291 10.0291 28.8291H27.5271ZM7.92938 22.3017C8.58547 21.9901 9.30283 21.8289 10.0291 21.8299H27.5271V6.43175H9.32922C8.95796 6.43175 8.6019 6.57923 8.33938 6.84175C8.07686 7.10427 7.92938 7.46032 7.92938 7.83158V22.3017Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_2_131">
-                      <rect
-                        width="33.596"
-                        height="33.596"
-                        fill="white"
-                        transform="translate(0.930237 0.83252)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <div className="second_block_texts ">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] text-[29px] font-[600] poppins duration-[0.7s]">
-                  English
-                </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[18px] font-[300] poppins duration-[0.7s]">
-                  Hisor, Dushanbe 10.2019-9.2022
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f]  text-[16px] font-[300] poppins duration-[0.7s]">
+                  {t("s4.t16")}
                 </p>
               </div>
             </div>
@@ -895,49 +927,12 @@ const App = () => {
                   </defs>
                 </svg>
               </div>
-              <div className="second_block_texts ">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] text-[29px] poppins font-[600] duration-[0.7s]">
-                  Ilmhona
+              <div className="second_block_texts">
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] poppins md:text-[29px] sm:text-[21px] font-[600] duration-[0.7s] max-w-[300px]">
+                  {t("s4.t17")}
                 </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f]  text-[18px] font-[300] poppins duration-[0.7s]">
-                  Dushanbe 10.2022-1.2023
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-8 mt-[40px]">
-              <div className="icon_bg">
-                <svg
-                  className="w-[40%] h-[40%]"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  viewBox="0 0 35 35"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_2_131)">
-                    <path
-                      d="M5.12971 26.7293V7.83158C5.12971 6.7178 5.57216 5.64964 6.35972 4.86209C7.14728 4.07453 8.21544 3.63208 9.32922 3.63208H28.9269C29.2981 3.63208 29.6542 3.77956 29.9167 4.04208C30.1792 4.3046 30.3267 4.66065 30.3267 5.03191V30.2289C30.3267 30.6002 30.1792 30.9562 29.9167 31.2187C29.6542 31.4813 29.2981 31.6287 28.9269 31.6287H10.0291C8.72973 31.6287 7.48354 31.1126 6.56472 30.1937C5.6459 29.2749 5.12971 28.0287 5.12971 26.7293ZM27.5271 28.8291V24.6296H10.0291C9.47224 24.6296 8.93816 24.8508 8.54438 25.2446C8.1506 25.6384 7.92938 26.1724 7.92938 26.7293C7.92938 27.2862 8.1506 27.8203 8.54438 28.2141C8.93816 28.6079 9.47224 28.8291 10.0291 28.8291H27.5271ZM7.92938 22.3017C8.58547 21.9901 9.30283 21.8289 10.0291 21.8299H27.5271V6.43175H9.32922C8.95796 6.43175 8.6019 6.57923 8.33938 6.84175C8.07686 7.10427 7.92938 7.46032 7.92938 7.83158V22.3017Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_2_131">
-                      <rect
-                        width="33.596"
-                        height="33.596"
-                        fill="white"
-                        transform="translate(0.930237 0.83252)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <div className="second_block_texts ">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] poppins text-[29px] font-[600] duration-[0.7s]">
-                  Softclub
-                </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] duration-[0.7s] text-[18px] font-[300] poppins">
-                  Dushanbe 4.2023-9.2023
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] duration-[0.7s] text-[16px] font-[300] poppins">
+                  {t("s4.t18")}
                 </p>
               </div>
             </div>
@@ -945,20 +940,20 @@ const App = () => {
         </section>
         <section className="section_5 mt-[60px]" id="projects">
           <h1 className="poppins border-t-[3px] border-t-[#fff] max-w-[500px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
-            My projects
+            {t("s5.t1")}
           </h1>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
           <div className="centering_the_text_s_6 flex justify-center">
             <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[500px] sm:max-w-[100%] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
-              Contact with me
+              {t("s6.t1")}
             </h1>
           </div>
           <div className="block_of_contacts mt-[40px] flex gap-[20px] flex-wrap justify-center">
             <div className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <MdAttachEmail className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
-                Email
+                {t("s6.t2")}
               </h1>
               <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
                 oyuldoshev39@gmail.com
@@ -967,7 +962,7 @@ const App = () => {
             <div className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FaWhatsapp className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
-                WhatsApp
+                {t("s6.t3")}
               </h1>
               <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
                 +992919697875
@@ -976,7 +971,7 @@ const App = () => {
             <div className="telegram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FaTelegramPlane className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
-                Telegram
+                {t("s6.t4")}
               </h1>
               <a
                 className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
@@ -988,7 +983,7 @@ const App = () => {
             <div className="instagram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FaInstagram className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
-                Instagram
+                {t("s6.t5")}
               </h1>
               <a
                 className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
@@ -1000,7 +995,7 @@ const App = () => {
             <div className="gitHub border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FiGithub className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
-                GitHub
+                {t("s6.t6")}
               </h1>
               <a
                 className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
@@ -1012,7 +1007,7 @@ const App = () => {
             <div className="linkedIn border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FaLinkedinIn className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
-                LinkedIn
+                {t("s6.t7")}
               </h1>
               <a
                 className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
@@ -1025,17 +1020,26 @@ const App = () => {
         </section>
       </main>
       <footer className="footer mt-[60px] flex flex-col justify-center items-center gap-4">
-        <h1 className="dark:text-[#1f1f1f] text-[#fff] md:text-[56px] sm:text-[38px] font-[600] text-center duration-[0.7s]">
-          Intrested in my Work
-        </h1>
-        <p className="dark:text-[#1f1f1f] text-[#9E9E9E] text-[19px] font-[400] text-center duration-[0.7s]">
-          Download my CV to know more about me
-        </p>
-        <a href={myResume} download={myResume}>
-          <button className="p-[16px_46px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.7s]">
-            Download CV
-          </button>
-        </a>
+        <div className="footer_block_1">
+          <h1 className="dark:text-[#1f1f1f] text-[#fff] md:text-[56px] sm:text-[38px] font-[600] text-center duration-[0.7s]">
+            {t("f.t1")}
+          </h1>
+          <div className="for_p_foote flex justify-center">
+            <p className="dark:text-[#1f1f1f] text-[#9E9E9E] text-[19px] font-[400] text-center duration-[0.7s] max-w-[300px]">
+              {t("f.t2")}
+            </p>
+          </div>
+          <a
+            href={myResume}
+            download={myResume}
+            className="flex justify-center mt-[20px]"
+          >
+            <button className="p-[16px_13px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.7s]">
+              {t("f.t3")}
+            </button>
+          </a>
+        </div>
+        <div className="footer_block_2"></div>
       </footer>
     </div>
   );
