@@ -115,7 +115,7 @@ const App = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      className="bg-[#1f1f1f] h-[100vh] text-[#fff] dark:text-[#1f1f1f] dark:bg-[#fff]"
+      className="bg-[#1f1f1f] text-[#fff] dark:text-[#1f1f1f] dark:bg-[#fff]"
     >
       <List>
         {[
