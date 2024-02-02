@@ -952,9 +952,11 @@ const App = () => {
           <div className="block_of_contacts mt-[40px] flex gap-[20px] flex-wrap justify-center">
             <div className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <MdAttachEmail className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
-              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
+              <div className="block_for_text flex justify-center">
+                <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s] text-center">
                 {t("s6.t2")}
               </h1>
+              </div>
               <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
                 oyuldoshev39@gmail.com
               </p>
@@ -968,54 +970,58 @@ const App = () => {
                 +992919697875
               </p>
             </div>
-            <div className="telegram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+            <a
+                href="https://t.me/olim_yuldoshev_ooo3" className="telegram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FaTelegramPlane className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t4")}
               </h1>
               <a
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
                 href="https://t.me/olim_yuldoshev_ooo3"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
               >
                 @olim_yuldoshev_ooo3
               </a>
-            </div>
-            <div className="instagram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+            </a>
+            <a
+                href="https://www.instagram.com/olim_yuldoshev_ooo3/" className="instagram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FaInstagram className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t5")}
               </h1>
               <a
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
                 href="https://www.instagram.com/olim_yuldoshev_ooo3/"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
               >
                 @olim_yuldoshev_ooo3
               </a>
-            </div>
-            <div className="gitHub border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+            </a>
+            <a
+                href="https://github.com/olimyuldoshev2003" className="gitHub border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FiGithub className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t6")}
               </h1>
               <a
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
                 href="https://github.com/olimyuldoshev2003"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
               >
                 @olimyuldoshev2003
               </a>
-            </div>
-            <div className="linkedIn border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+            </a>
+            <a
+                href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/" className="linkedIn border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
               <FaLinkedinIn className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t7")}
               </h1>
               <a
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
                 href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
               >
                 Olim Yuldoshev
               </a>
-            </div>
+            </a>
           </div>
         </section>
       </main>
