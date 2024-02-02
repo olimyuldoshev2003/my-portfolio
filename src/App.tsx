@@ -149,7 +149,7 @@ const App = () => {
           },
           {
             id: "#contacts",
-            section: "Contacts",
+            section: t("h.t8"),
           },
         ].map((text) => (
           <a href={text.id} key={text.id}>
