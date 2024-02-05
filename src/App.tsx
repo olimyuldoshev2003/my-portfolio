@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 // For Drawer Materiial UI
@@ -23,6 +23,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 // import { FaLinkedin } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { RiArrowDropUpLine } from "react-icons/ri";
 
 type Anchor = "top" | "left" | "bottom" | "right";
 
@@ -49,6 +50,20 @@ const App = () => {
   const changeLanguage = (language: any) => {
     i18n.changeLanguage(language);
   };
+
+  //For back to top button
+  const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
+
+  useEffect(() => {
+    console.log(window.scrollY )
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setBackToTopBtn(true);
+      } else {
+        setBackToTopBtn(false);
+      }
+    })
+  }, [])
 
   //For Courses
 
@@ -166,7 +181,7 @@ const App = () => {
 
   return (
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
-      <header className="header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between">
+      <header className="header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between fixed top-0 z-50 backdrop-blur-[50px] w-[100%]">
         <div>
           <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[23px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
             {t("logoH.t")}
@@ -246,7 +261,7 @@ const App = () => {
             <select
               name=""
               id=""
-              className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#000] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000]"
+              className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000]"
               onChange={(event) => changeLanguage(event.target.value)}
             >
               <option
@@ -289,9 +304,19 @@ const App = () => {
         </div>
       </header>
       <main
-        className="main md:p-[20px_60px] sm:p-[20px_5px] flex flex-col justify-center items-center"
+        className="main md:px-[60px] sm:px-[5px] pt-[110px] pb-[20px] flex flex-col justify-center items-center"
         id="home"
       >
+        <button
+          className={`${
+            backToTopBtn ? `block` : `hidden`
+          } p-[5px] bg-[#fff] text-[#1f1f1f] text-[32px] rounded-[5px] fixed bottom-[20px] right-[20px] dark:bg-[#1f1f1f] dark:text-[#fff]`}
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
+          <RiArrowDropUpLine />
+        </button>
         <h1 className="text-center text-[#fff] dark:text-[#1f1f1f] md:text-[70px] sm:text-[35px] uppercase duration-[0.7s]">
           {t("main.t")}
         </h1>
@@ -950,18 +975,18 @@ const App = () => {
             </h1>
           </div>
           <div className="block_of_contacts mt-[40px] flex gap-[20px] flex-wrap justify-center">
-            <div className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+            <div className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer">
               <MdAttachEmail className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <div className="block_for_text flex justify-center">
                 <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s] text-center">
-                {t("s6.t2")}
-              </h1>
+                  {t("s6.t2")}
+                </h1>
               </div>
               <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
                 oyuldoshev39@gmail.com
               </p>
             </div>
-            <div className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+            <div className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer">
               <FaWhatsapp className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t3")}
@@ -971,7 +996,9 @@ const App = () => {
               </p>
             </div>
             <a
-                href="https://t.me/olim_yuldoshev_ooo3" className="telegram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+              href="https://t.me/olim_yuldoshev_ooo3"
+              className="telegram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
+            >
               <FaTelegramPlane className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t4")}
@@ -984,7 +1011,9 @@ const App = () => {
               </a>
             </a>
             <a
-                href="https://www.instagram.com/olim_yuldoshev_ooo3/" className="instagram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+              href="https://www.instagram.com/olim_yuldoshev_ooo3/"
+              className="instagram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
+            >
               <FaInstagram className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t5")}
@@ -997,7 +1026,9 @@ const App = () => {
               </a>
             </a>
             <a
-                href="https://github.com/olimyuldoshev2003" className="gitHub border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+              href="https://github.com/olimyuldoshev2003"
+              className="gitHub border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
+            >
               <FiGithub className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t6")}
@@ -1010,7 +1041,9 @@ const App = () => {
               </a>
             </a>
             <a
-                href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/" className="linkedIn border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5]">
+              href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/"
+              className="linkedIn border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] max-w-[288px] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
+            >
               <FaLinkedinIn className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t7")}
