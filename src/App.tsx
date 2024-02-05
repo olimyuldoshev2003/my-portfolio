@@ -35,6 +35,8 @@ import imgJS from "./assets/js 3.png";
 import imgBootstrap from "./assets/bootstrap-4-logo-pngrepo-com 4.png";
 import imgTailwind from "./assets/Tailwind.png";
 import imgReact from "./assets/react 2.png";
+import imgGit from "./assets/Git-Icon-1788C.png"
+import imgGitHub from "./assets/github.png"
 
 //For resume
 import myResume from "./uploads/My-Resume-English.pdf";
@@ -55,14 +57,13 @@ const App = () => {
   const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log(window.scrollY )
-    window.addEventListener("scroll", () => {
+    window.onscroll = () => {
       if (window.scrollY > 300) {
         setBackToTopBtn(true);
       } else {
         setBackToTopBtn(false);
       }
-    })
+    }
   }, [])
 
   //For Courses
@@ -398,6 +399,8 @@ const App = () => {
             <img src={imgBootstrap} alt="" />
             <img src={imgTailwind} className="w-[113px] h-[125px]" alt="" />
             <img src={imgReact} alt="" />
+            <img src={imgGit} className="w-[125px] h-[125px]" alt="" />
+            <img src={imgGitHub} className="w-[125px] h-[125px]" alt="" />
           </div>
           <div className="my_skills_with_percent mt-[40px]">
             <div className="icons_of_my_skills_with_percent flex justify-center">
