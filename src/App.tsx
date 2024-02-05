@@ -311,7 +311,7 @@ const App = () => {
         <button
           className={`${
             backToTopBtn ? `block` : `hidden`
-          } p-[5px] bg-[#fff] text-[#1f1f1f] text-[32px] rounded-[5px] fixed bottom-[20px] right-[20px] dark:bg-[#1f1f1f] dark:text-[#fff]`}
+          } p-[5px] bg-[#fff] text-[#1f1f1f] text-[32px] rounded-[5px] fixed bottom-[20px] right-[20px] dark:bg-[#1f1f1f] dark:text-[#fff] duration-[0.7s]`}
           onClick={() => {
             window.scrollTo(0, 0);
           }}
@@ -840,10 +840,10 @@ const App = () => {
                 <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] md:text-[29px] sm:text-[21px] font-[600] poppins duration-[0.7s] max-w-[300px]">
                   {t("s4.t9")}
                 </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins">
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins duration-[0.7s]">
                   {t("s4.t11")}
                 </p>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins">
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins duration-[0.7s]">
                   {t("s4.t10")}
                 </p>
               </div>
