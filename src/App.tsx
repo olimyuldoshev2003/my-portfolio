@@ -25,7 +25,6 @@ import imgTailwind from "./assets/Tailwind.png";
 import imgReact from "./assets/react 2.png";
 import imgGit from "./assets/Git-Icon-1788C.png";
 import imgGitHub from "./assets/github.png";
-import imgOfFirstProject from "./assets/images of projects/FireShot Capture 002 - Project - post-office.vercel.app.png";
 // import imgOfSecondProject from ""
 // import imgOfThirdProject from ""
 
@@ -64,7 +63,6 @@ const App = () => {
 
   // For closing the menu outside of the modal menu
 
-  const closeModalNavBarMobileSize = useRef<any>();
 
   //For back to top button
   const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
