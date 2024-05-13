@@ -45,9 +45,9 @@ const App = () => {
 
   //For mobile size menu
 
-  const [burger_class, setBurgerClass] = useState("burger_bar unclicked");
-  const [menu_class, setMenuClass] = useState("links_hidden");
-  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [burger_class, setBurgerClass] = useState<string>("burger_bar unclicked");
+  const [menu_class, setMenuClass] = useState<string>("links_hidden");
+  const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
   function changeMenu() {
     if (!isMenuClicked) {
