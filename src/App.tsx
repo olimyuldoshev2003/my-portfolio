@@ -35,8 +35,11 @@ import imgJS from "./assets/js 3.png";
 import imgBootstrap from "./assets/bootstrap-4-logo-pngrepo-com 4.png";
 import imgTailwind from "./assets/Tailwind.png";
 import imgReact from "./assets/react 2.png";
-import imgGit from "./assets/Git-Icon-1788C.png"
-import imgGitHub from "./assets/github.png"
+import imgGit from "./assets/Git-Icon-1788C.png";
+import imgGitHub from "./assets/github.png";
+import imgOfFirstProject from "./assets/images of projects/FireShot Capture 002 - Project - post-office.vercel.app.png";
+// import imgOfSecondProject from ""
+// import imgOfThirdProject from ""
 
 //For resume
 import myResume from "./uploads/My-Resume-English.pdf";
@@ -63,8 +66,8 @@ const App = () => {
       } else {
         setBackToTopBtn(false);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   //For Courses
 
@@ -182,106 +185,108 @@ const App = () => {
 
   return (
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
-      <header className="header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between fixed top-0 z-50 backdrop-blur-[50px] w-[100%]">
-        <div>
-          <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[23px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
-            {t("logoH.t")}
-          </h1>
-        </div>
-        <div className="flex items-center gap-[10px]">
-          <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#home"
-              >
-                {t("h.t1")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#about"
-              >
-                {t("h.t2")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#skills"
-              >
-                {t("h.t3")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#language"
-              >
-                {t("h.t4")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#studies"
-              >
-                {t("h.t5")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#courses"
-              >
-                {t("h.t6")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#projects"
-              >
-                {t("h.t7")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[#1f1f1f] dark:hover:text-[#bea3a3] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#contacts"
-              >
-                {t("h.t8")}
-              </a>
-            </li>
-          </ul>
+      <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
+        <div className="block_header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between max-w-[1440px] m-[0_auto]">
           <div>
-            <Switcher />
+            <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[23px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
+              {t("logoH.t")}
+            </h1>
           </div>
-          <div className="for_translation">
-            <select
-              name=""
-              id=""
-              className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.7s]"
-              onChange={(event) => changeLanguage(event.target.value)}
-            >
-              <option
-                value=""
-                className="dark:text-[#000] dark:bg-[#fff]"
-                disabled
+          <div className="flex items-center gap-[10px]">
+            <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#home"
+                >
+                  {t("h.t1")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#about"
+                >
+                  {t("h.t2")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#skills"
+                >
+                  {t("h.t3")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#language"
+                >
+                  {t("h.t4")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#studies"
+                >
+                  {t("h.t5")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#courses"
+                >
+                  {t("h.t6")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#projects"
+                >
+                  {t("h.t7")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  href="#contacts"
+                >
+                  {t("h.t8")}
+                </a>
+              </li>
+            </ul>
+            <div>
+              <Switcher />
+            </div>
+            <div className="for_translation">
+              <select
+                name=""
+                id=""
+                className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.7s]"
+                onChange={(event) => changeLanguage(event.target.value)}
               >
-                {t("language.t1")}
-              </option>
-              <option value="en" className="dark:text-[#000] dark:bg-[#fff]">
-                {t("language.t2")}
-              </option>
-              <option value="ru" className="dark:text-[#000] dark:bg-[#fff]">
-                {t("language.t3")}
-              </option>
-              <option value="tj" className="dark:text-[#000] dark:bg-[#fff]">
-                {t("language.t4")}
-              </option>
-            </select>
+                <option
+                  value=""
+                  className="dark:text-[#000] dark:bg-[#fff]"
+                  disabled
+                >
+                  {t("language.t1")}
+                </option>
+                <option value="en" className="dark:text-[#000] dark:bg-[#fff]">
+                  {t("language.t2")}
+                </option>
+                <option value="ru" className="dark:text-[#000] dark:bg-[#fff]">
+                  {t("language.t3")}
+                </option>
+                <option value="tj" className="dark:text-[#000] dark:bg-[#fff]">
+                  {t("language.t4")}
+                </option>
+              </select>
+            </div>
           </div>
           <div className="mobile_menu sm:block lg:hidden">
             {(["right"] as const).map((anchor) => (
@@ -305,7 +310,7 @@ const App = () => {
         </div>
       </header>
       <main
-        className="main md:px-[60px] sm:px-[5px] pt-[110px] pb-[20px] flex flex-col justify-center items-center"
+        className="main md:px-[60px] sm:px-[5px] pt-[110px] pb-[20px]"
         id="home"
       >
         <button
@@ -321,7 +326,7 @@ const App = () => {
         <h1 className="text-center text-[#fff] dark:text-[#1f1f1f] md:text-[70px] sm:text-[35px] uppercase duration-[0.7s]">
           {t("main.t")}
         </h1>
-        <section className="section_1 flex md:justify-between items-center sm:flex-wrap-reverse md:flex-nowrap gap-[50px] sm:justify-center mt-[30px]">
+        <section className="section_1 flex md:justify-between items-center sm:flex-wrap-reverse md:flex-nowrap gap-[50px] sm:justify-center mt-[30px] max-w-[1440px] m-[0_auto]">
           <div className="flex flex-col gap-[15px] items-start" id="contact">
             <h4 className="poppins text-[#fff] text-[25px] font-[300] dark:text-[#1f1f1f] duration-[0.7s]">
               {t("s1.t1")}
@@ -363,7 +368,10 @@ const App = () => {
             <img src={imgS1} alt="" />
           </div>
         </section>
-        <section className="section_2 mt-[50px] flex flex-col gap-7" id="about">
+        <section
+          className="section_2 mt-[50px] flex flex-col gap-7 max-w-[1440px] m-[0_auto]"
+          id="about"
+        >
           <div className="for_text_about_me_s_2 flex justify-center">
             <h1 className="border-t-[3px] border-t-[#fff] dark:border-[#000] text-center text-[#fff] dark:text-[#1f1f1f] md:text-[50px] sm:text-[35px] uppercase duration-[0.7s] md:max-w-[340px] sm:max-w-[246px]">
               {t("s2.t1")}
@@ -386,7 +394,10 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section className="section_3 mt-[50px]" id="skills">
+        <section
+          className="section_3 mt-[50px] max-w-[1440px] m-[0_auto]"
+          id="skills"
+        >
           <div className="block_centering_s_3_skills flex justify-center">
             <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[300px] sm:max-w-[146px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
               {t("s3.t1")}
@@ -756,7 +767,7 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section className="section_4 mt-[50px] flex md:justify-between items-start sm:flex-wrap sm:justify-center gap-[30px]">
+        <section className="section_4 mt-[50px] flex md:justify-between items-start sm:flex-wrap sm:justify-center gap-[30px] max-w-[1440px] m-[0_auto]">
           <div className="item_1_s_4" id="language">
             <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] dark:border-[#1f1f1f] duration-[0.7s]">
               {t("s4.t1")}
@@ -966,10 +977,21 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section className="section_5 mt-[60px]" id="projects">
-          <h1 className="poppins border-t-[3px] border-t-[#fff] max-w-[500px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
+        <section
+          className="section_5 mt-[60px] max-w-[1440px] m-[0_auto]"
+          id="projects"
+        >
+          <h1 className="poppins border-t-[3px] border-t-[#fff] max-w-[500px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center m-[0_auto]">
             {t("s5.t1")}
           </h1>
+          <div className="projects flex mt-[50px]">
+            {/* <div className="first_project sm:max-w-[280px] md:max-w-[350px] ">
+              <img className="w-[260px] rounded-[30px]" src={imgOfFirstProject} alt="" />
+              <div className="for_texts">
+                <h1>Post Office</h1>
+              </div>
+            </div> */}
+          </div>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
           <div className="centering_the_text_s_6 flex justify-center">

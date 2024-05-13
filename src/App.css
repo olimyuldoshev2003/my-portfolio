@@ -43,3 +43,17 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+.header {
+  /* transform: translateZ(0); */
+  /* -webkit-backdrop-filter: saturate(180%) blur(5px); */
+  /* backdrop-filter: saturate(180%) blur(5px); */
+  /* background: hsla(0, 0%, 100%, 0.8); */
+}
+
+.header-dark {
+  transform: translateZ(0);
+  /* -webkit-backdrop-filter: saturate(180%) blur(5px); */
+  /* backdrop-filter: saturate(180%) blur(5px); */
+  /* background: rgba(34, 34, 34, 0.8); */
+}
