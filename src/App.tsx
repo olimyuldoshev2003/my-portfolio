@@ -1,17 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
-
-// For Drawer Materiial UI
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-// import HomeIcon from "@mui/icons-material/Home";
-// import InfoIcon from "@mui/icons-material/Info";
-// import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 
 //For React Icons
 import { VscVerifiedFilled } from "react-icons/vsc";
@@ -55,6 +43,28 @@ const App = () => {
   const changeLanguage = (language: any) => {
     i18n.changeLanguage(language);
   };
+
+  //For mobile size menu
+
+  const [burger_class, setBurgerClass] = useState("burger_bar unclicked");
+  const [menu_class, setMenuClass] = useState("links_hidden");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+
+  function changeMenu() {
+    if (!isMenuClicked) {
+      setBurgerClass("clicked");
+      setMenuClass("links_visible");
+    } else {
+      setBurgerClass("unclicked");
+      setMenuClass("links_hidden");
+    }
+
+    setIsMenuClicked(!isMenuClicked);
+  }
+
+  // For closing the menu outside of the modal menu
+
+  const closeModalNavBarMobileSize = useRef<any>();
 
   //For back to top button
   const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
@@ -107,81 +117,81 @@ const App = () => {
   const [RESTAPI] = useState<number>(82);
   const [nextJS] = useState<number>(50);
 
-  const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
+  // const [state, setState] = React.useState({
+  //   top: false,
+  //   left: false,
+  //   bottom: false,
+  //   right: false,
+  // });
 
-  const toggleDrawer =
-    (anchor: Anchor, open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent) => {
-      if (
-        event.type === "keydown" &&
-        ((event as React.KeyboardEvent).key === "Tab" ||
-          (event as React.KeyboardEvent).key === "Shift")
-      ) {
-        return;
-      }
+  // const toggleDrawer =
+  //   (anchor: Anchor, open: boolean) =>
+  //   (event: React.KeyboardEvent | React.MouseEvent) => {
+  //     if (
+  //       event.type === "keydown" &&
+  //       ((event as React.KeyboardEvent).key === "Tab" ||
+  //         (event as React.KeyboardEvent).key === "Shift")
+  //     ) {
+  //       return;
+  //     }
 
-      setState({ ...state, [anchor]: open });
-    };
+  //     setState({ ...state, [anchor]: open });
+  //   };
 
-  const list = (anchor: Anchor) => (
-    <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-      className="bg-[#1f1f1f] text-[#fff] dark:text-[#1f1f1f] dark:bg-[#fff]"
-    >
-      <List>
-        {[
-          {
-            id: "#home",
-            section: t("h.t1"),
-          },
-          {
-            id: "#about",
-            section: t("h.t2"),
-          },
-          {
-            id: "#skills",
-            section: t("h.t3"),
-          },
-          {
-            id: "#language",
-            section: t("h.t4"),
-          },
-          {
-            id: "#studies",
-            section: t("h.t5"),
-          },
-          {
-            id: "#courses",
-            section: t("h.t6"),
-          },
-          {
-            id: "#projects",
-            section: t("h.t7"),
-          },
-          {
-            id: "#contacts",
-            section: t("h.t8"),
-          },
-        ].map((text) => (
-          <a href={text.id} key={text.id}>
-            <ListItem key={text.section} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text.section} />
-              </ListItemButton>
-            </ListItem>
-          </a>
-        ))}
-      </List>
-    </Box>
-  );
+  // const list = (anchor: Anchor) => (
+  //   <Box
+  //     sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+  //     role="presentation"
+  //     onClick={toggleDrawer(anchor, false)}
+  //     onKeyDown={toggleDrawer(anchor, false)}
+  //     className="bg-[#1f1f1f] text-[#fff] dark:text-[#1f1f1f] dark:bg-[#fff]"
+  //   >
+  //     <List>
+  //       {[
+  //         {
+  //           id: "#home",
+  //           section: t("h.t1"),
+  //         },
+  //         {
+  //           id: "#about",
+  //           section: t("h.t2"),
+  //         },
+  //         {
+  //           id: "#skills",
+  //           section: t("h.t3"),
+  //         },
+  //         {
+  //           id: "#language",
+  //           section: t("h.t4"),
+  //         },
+  //         {
+  //           id: "#studies",
+  //           section: t("h.t5"),
+  //         },
+  //         {
+  //           id: "#courses",
+  //           section: t("h.t6"),
+  //         },
+  //         {
+  //           id: "#projects",
+  //           section: t("h.t7"),
+  //         },
+  //         {
+  //           id: "#contacts",
+  //           section: t("h.t8"),
+  //         },
+  //       ].map((text) => (
+  //         <a href={text.id} key={text.id}>
+  //           <ListItem key={text.section} disablePadding>
+  //             <ListItemButton>
+  //               <ListItemText primary={text.section} />
+  //             </ListItemButton>
+  //           </ListItem>
+  //         </a>
+  //       ))}
+  //     </List>
+  //   </Box>
+  // );
 
   return (
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
@@ -192,7 +202,7 @@ const App = () => {
               {t("logoH.t")}
             </h1>
           </div>
-          <div className="flex items-center gap-[10px]">
+          <nav className="flex items-center gap-[10px]">
             <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
               <li>
                 <a
@@ -259,56 +269,173 @@ const App = () => {
                 </a>
               </li>
             </ul>
-            <div>
-              <Switcher />
-            </div>
-            <div className="for_translation">
-              <select
-                name=""
-                id=""
-                className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.7s]"
-                onChange={(event) => changeLanguage(event.target.value)}
-              >
-                <option
-                  value=""
-                  className="dark:text-[#000] dark:bg-[#fff]"
-                  disabled
+            <div className="block_3_header flex items-center gap-4">
+              <div>
+                <Switcher />
+              </div>
+              <div className="for_translation">
+                <select
+                  name=""
+                  id=""
+                  className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.7s]"
+                  onChange={(event) => changeLanguage(event.target.value)}
                 >
-                  {t("language.t1")}
-                </option>
-                <option value="en" className="dark:text-[#000] dark:bg-[#fff]">
-                  {t("language.t2")}
-                </option>
-                <option value="ru" className="dark:text-[#000] dark:bg-[#fff]">
-                  {t("language.t3")}
-                </option>
-                <option value="tj" className="dark:text-[#000] dark:bg-[#fff]">
-                  {t("language.t4")}
-                </option>
-              </select>
+                  <option
+                    value=""
+                    className="dark:text-[#000] dark:bg-[#fff]"
+                    disabled
+                  >
+                    {t("language.t1")}
+                  </option>
+                  <option
+                    value="en"
+                    className="dark:text-[#000] dark:bg-[#fff]"
+                  >
+                    {t("language.t2")}
+                  </option>
+                  <option
+                    value="ru"
+                    className="dark:text-[#000] dark:bg-[#fff]"
+                  >
+                    {t("language.t3")}
+                  </option>
+                  <option
+                    value="tj"
+                    className="dark:text-[#000] dark:bg-[#fff]"
+                  >
+                    {t("language.t4")}
+                  </option>
+                </select>
+              </div>
+              <div className="mobile_menu sm:block lg:hidden cursor-pointer">
+                <div className="burger_menu" onClick={changeMenu}>
+                  <div
+                    className={`${burger_class} cols dark:bg-[#333333] bg-[#fff]`}
+                  ></div>
+                  <div
+                    className={`${burger_class} cols dark:bg-[#333333] bg-[#fff]`}
+                  ></div>
+                  <div
+                    className={`${burger_class} cols dark:bg-[#333333] bg-[#fff]`}
+                  ></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="mobile_menu sm:block lg:hidden">
-            {(["right"] as const).map((anchor) => (
-              <React.Fragment key={anchor}>
-                <MenuIcon
-                  className="text-[#fff] dark:text-[#1f1f1f] duration-[0.7s]"
-                  sx={{ fontSize: `33px` }}
-                  onClick={toggleDrawer(anchor, true)}
-                  onKeyDown={toggleDrawer(anchor, true)}
-                ></MenuIcon>
-                <Drawer
-                  anchor={anchor}
-                  open={state[anchor]}
-                  onClose={toggleDrawer(anchor, false)}
-                >
-                  {list(anchor)}
-                </Drawer>
-              </React.Fragment>
-            ))}
-          </div>
+          </nav>
         </div>
       </header>
+      <div className="for_mobile_size">
+        <nav
+          className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-[69.4px] z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
+        >
+          <ul className="sm:flex sm:flex-col sm:items-center sm:flex-wrap sm:gap-[10px] lg:hidden poppins h-[100vh]">
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#home"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t1")}
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#about"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t2")}
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#skills"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t3")}
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#language"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t4")}
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#studies"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t5")}
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#courses"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t6")}
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#projects"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t7")}
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                href="#contacts"
+                onClick={() => {
+                  setBurgerClass("unclicked");
+                  setMenuClass("links_hidden");
+                  setIsMenuClicked(false);
+                }}
+              >
+                {t("h.t8")}
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <main
         className="main md:px-[60px] sm:px-[5px] pt-[110px] pb-[20px]"
         id="home"
@@ -316,7 +443,7 @@ const App = () => {
         <button
           className={`${
             backToTopBtn ? `block` : `hidden`
-          } p-[5px] bg-[#fff] text-[#1f1f1f] text-[32px] rounded-[5px] fixed bottom-[20px] right-[20px] dark:bg-[#1f1f1f] dark:text-[#fff] duration-[0.7s]`}
+          } p-[5px] bg-[#fff] text-[#1f1f1f] text-[32px] rounded-[5px] fixed bottom-[20px] right-[20px] dark:bg-[#1f1f1f] dark:text-[#fff] duration-[0.7s] z-40`}
           onClick={() => {
             window.scrollTo(0, 0);
           }}
