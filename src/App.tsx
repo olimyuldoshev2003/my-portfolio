@@ -13,8 +13,6 @@ import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiArrowDropUpLine } from "react-icons/ri";
 
-type Anchor = "top" | "left" | "bottom" | "right";
-
 //For images
 import imgS1 from "./assets/my-photo.jpg";
 import imgHTML from "./assets/Group 321.png";
