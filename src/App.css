@@ -117,10 +117,11 @@
 }
 
 .links_hidden {
-  animation: disappear 0.5s 0s forwards;
+  /* animation: disappear 0.5s 0s forwards; */
+  display: none;
 }
 
-@keyframes disappear {
+/* @keyframes disappear {
   from {
     transform: translateY(0px);
     opacity: 1;
@@ -131,7 +132,7 @@
     opacity: 0;
     display: none;
   }
-}
+} */
 
 .img_s_1 img {
   border: 5px inset #ffffff4d;
