@@ -140,3 +140,8 @@
 .img_s_2 img {
   border: 5px outset #ffffff4d;
 }
+
+.block_of_contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
