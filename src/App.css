@@ -132,3 +132,11 @@
     display: none;
   }
 }
+
+.img_s_1 img {
+  border: 5px inset #ffffff4d;
+}
+
+.img_s_2 img {
+  border: 5px outset #ffffff4d;
+}

@@ -194,8 +194,8 @@ const App = () => {
       <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
         <div className="block_header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between max-w-[1440px] m-[0_auto]">
           <div>
-            <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[23px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
-              {t("logoH.t")}
+            <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
+              Olim Karomatov
             </h1>
           </div>
           <nav className="flex items-center gap-[10px]">
@@ -322,7 +322,7 @@ const App = () => {
       </header>
       <div className="for_mobile_size">
         <nav
-          className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-[80px] z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
+          className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed md:top-[80px] sm:top-[75px] z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
         >
           <ul className="sm:flex sm:flex-col sm:items-center sm:flex-wrap sm:gap-[10px] lg:hidden poppins h-[100vh]">
             <li>
@@ -487,7 +487,7 @@ const App = () => {
               </a>
             </div>
           </div>
-          <div className="md:w-[50%] sm:w-[92%]">
+          <div className="img_s_1 md:w-[50%] sm:w-[92%]">
             <img src={imgS1} alt="" />
           </div>
         </section>
@@ -501,7 +501,7 @@ const App = () => {
             </h1>
           </div>
           <div className="block_s_2 flex md:justify-between sm:justify-center items-center sm:flex-wrap md:flex-nowrap gap-[20px]">
-            <div className="md:w-[40%] sm:w-[92%]">
+            <div className="img_s_2 md:w-[40%] sm:w-[92%]">
               <img src={imgS1} alt="" />
             </div>
             <div className="flex flex-col gap-[10px]">
