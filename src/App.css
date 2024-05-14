@@ -7,8 +7,9 @@
 /* Questrial */
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-html {
+* {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px;
 }
 
 .alex_brush {
@@ -116,5 +117,18 @@ html {
 }
 
 .links_hidden {
-  display: none;
+  animation: disappear 0.5s 0s forwards;
+}
+
+@keyframes disappear {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+    display: none;
+  }
 }

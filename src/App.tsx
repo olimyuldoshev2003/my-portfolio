@@ -322,7 +322,7 @@ const App = () => {
       </header>
       <div className="for_mobile_size">
         <nav
-          className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-[69.4px] z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
+          className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-[80px] z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
         >
           <ul className="sm:flex sm:flex-col sm:items-center sm:flex-wrap sm:gap-[10px] lg:hidden poppins h-[100vh]">
             <li>
