@@ -1108,12 +1108,7 @@ const App = () => {
             {t("s5.t1")}
           </h1>
           <div className="projects flex mt-[50px]">
-            {/* <div className="first_project sm:max-w-[280px] md:max-w-[350px] ">
-              <img className="w-[260px] rounded-[30px]" src={imgOfFirstProject} alt="" />
-              <div className="for_texts">
-                <h1>Post Office</h1>
-              </div>
-            </div> */}
+           
           </div>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
