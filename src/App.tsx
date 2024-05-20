@@ -274,7 +274,7 @@ const App = () => {
                 <select
                   name=""
                   id=""
-                  className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.7s]"
+                  className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.7s] cursor-pointer"
                   onChange={(event) => changeLanguage(event.target.value)}
                 >
                   <option
