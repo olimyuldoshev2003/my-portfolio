@@ -195,9 +195,18 @@ const App = () => {
       <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
         <div className="block_header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between max-w-[1440px] m-[0_auto]">
           <div>
-            <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
-              Olim Karomatov
-            </h1>
+            <a
+              href="#home"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
+                Olim Karomatov
+              </h1>
+            </a>
           </div>
           <nav className="flex items-center gap-[10px]">
             <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
