@@ -279,26 +279,26 @@ const App = () => {
                 >
                   <option
                     value=""
-                    className="dark:text-[#000] dark:bg-[#fff]"
+                    className="dark:text-[#000] dark:bg-[#fff] cursor-pointer"
                     disabled
                   >
                     {t("language.t1")}
                   </option>
                   <option
                     value="en"
-                    className="dark:text-[#000] dark:bg-[#fff]"
+                    className="dark:text-[#000] dark:bg-[#fff] cursor-pointer"
                   >
                     {t("language.t2")}
                   </option>
                   <option
                     value="ru"
-                    className="dark:text-[#000] dark:bg-[#fff]"
+                    className="dark:text-[#000] dark:bg-[#fff] cursor-pointer"
                   >
                     {t("language.t3")}
                   </option>
                   <option
                     value="tj"
-                    className="dark:text-[#000] dark:bg-[#fff]"
+                    className="dark:text-[#000] dark:bg-[#fff] cursor-pointer"
                   >
                     {t("language.t4")}
                   </option>
