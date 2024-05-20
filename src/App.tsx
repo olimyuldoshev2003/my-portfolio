@@ -43,7 +43,9 @@ const App = () => {
 
   //For mobile size menu
 
-  const [burger_class, setBurgerClass] = useState<string>("burger_bar unclicked");
+  const [burger_class, setBurgerClass] = useState<string>(
+    "burger_bar unclicked"
+  );
   const [menu_class, setMenuClass] = useState<string>("links_hidden");
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
@@ -60,7 +62,6 @@ const App = () => {
   }
 
   // For closing the menu outside of the modal menu
-
 
   //For back to top button
   const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
@@ -1107,18 +1108,19 @@ const App = () => {
           <h1 className="poppins border-t-[3px] border-t-[#fff] max-w-[500px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center m-[0_auto]">
             {t("s5.t1")}
           </h1>
-          <div className="projects flex mt-[50px]">
-           
-          </div>
+          <div className="projects flex mt-[50px]"></div>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
           <div className="centering_the_text_s_6 flex justify-center">
             <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[500px] sm:max-w-[100%] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
-              {t("s6.t1")}  
+              {t("s6.t1")}
             </h1>
           </div>
-          <div className="block_of_contacts mt-[40px] gap-[20px]">
-            <a href="email: oyuldoshev39@gmail.com" className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer">
+          <div className="block_of_contacts max-w-[1440px] m-[0_auto] mt-[40px] gap-[20px]">
+            <a
+              href="email: oyuldoshev39@gmail.com"
+              className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
+            >
               <MdAttachEmail className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <div className="block_for_text flex justify-center">
                 <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s] text-center">
@@ -1129,7 +1131,10 @@ const App = () => {
                 oyuldoshev39@gmail.com
               </p>
             </a>
-            <a href="whatsapp: +992919697875" className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer">
+            <a
+              href="whatsapp: +992919697875"
+              className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
+            >
               <FaWhatsapp className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
               <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
                 {t("s6.t3")}
