@@ -1118,7 +1118,7 @@ const App = () => {
           </div>
           <div className="block_of_contacts max-w-[1440px] m-[0_auto] mt-[40px] gap-[20px]">
             <a
-              href="email: oyuldoshev39@gmail.com"
+              href="mailto: oyuldoshev39@gmail.com"
               className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
               <MdAttachEmail className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
@@ -1132,7 +1132,7 @@ const App = () => {
               </p>
             </a>
             <a
-              href="whatsapp: +992919697875"
+              href="https://web.whatsapp.com/992919697875"
               className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
               <FaWhatsapp className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
