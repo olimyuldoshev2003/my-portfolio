@@ -1150,12 +1150,12 @@ const App = () => {
                 <p className="text-[16px] font-[400] text-center">
                   This project is created for showing the Hospitals, their
                   categories, scedule and so on. With this project you can find
-                  your favorite Hospital and also about that Hospital and also
+                  your favorite Hospital, about that Hospital and also
                   its category and its services. This project is created with
                   Russian language.
                 </p>
               </div>
-              <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px] cursor-pointer">
+              <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] overflow-hidden rounded-[20px] cursor-pointer">
                 <img
                   src={imgOfSecondProject}
                   className="rounded-[20px] max-w-[100%] h-auto translate-y-0 hover:translate-y-[-68%] duration-[5s]"
