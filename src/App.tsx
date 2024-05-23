@@ -23,7 +23,10 @@ import imgTailwind from "./assets/Tailwind.png";
 import imgReact from "./assets/react 2.png";
 import imgGit from "./assets/Git-Icon-1788C.png";
 import imgGitHub from "./assets/github.png";
-// import imgOfSecondProject from ""
+
+//For images of projects
+import imgOfFirstProject from "./assets/images of projects/formula-volume-ice-image.png"
+import imgOfSecondProject from "./assets/images of projects/hospital-tj-image.png"
 // import imgOfThirdProject from ""
 
 //For resume
@@ -1117,7 +1120,108 @@ const App = () => {
           <h1 className="poppins border-t-[3px] border-t-[#fff] max-w-[500px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center m-[0_auto]">
             {t("s5.t1")}
           </h1>
-          <div className="projects flex mt-[50px]"></div>
+          <div className="projects mt-[50px] flex flex-wrap items-center justify-center gap-2">
+            <div className="first_project rounded-[20px] grid md:grid-cols-[60%_40%] border-[2px] border-[#e7e5e5] p-[20px] gap-3">
+              <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+                <img
+                  src={imgOfFirstProject}
+                  className="rounded-[20px] max-w-[100%] h-auto translate-y-0 hover:translate-y-[-80%] duration-[5s] cursor-pointer"
+                  alt=""
+                />
+              </div>
+              <div className="block_texts flex flex-col gap-1">
+                <h1 className="text-[22px] font-[600] text-center">
+                  Formulas for volume of Ice
+                </h1>
+                <p className="text-[16px] font-[400] text-center">
+                  In this project I used the library React JS and also this
+                  project is created with Tajik language. This project is
+                  created for solving some mathematical formulas (the volume of
+                  ice), and the mathematical formulas are given. Only we need to
+                  add the number and click the submit button.
+                </p>
+              </div>
+            </div>
+            <div className="second_project rounded-[20px] grid md:grid-cols-[40%_60%] gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
+              <div className="block_texts flex flex-col gap-1">
+                <h1 className="text-[22px] font-[600] text-center">
+                  Hospital Tj
+                </h1>
+                <p className="text-[16px] font-[400] text-center">
+                  This project is created for showing the Hospitals, their
+                  categories, scedule and so on. With this project you can find
+                  your favorite Hospital and also about that Hospital and also
+                  its category and its services. This project is created with
+                  Russian language.
+                </p>
+              </div>
+              <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px] cursor-pointer">
+                <img
+                  src={imgOfSecondProject}
+                  className="rounded-[20px] max-w-[100%] h-auto translate-y-0 hover:translate-y-[-68%] duration-[5s]"
+                  alt=""
+                />
+              </div>
+            </div>
+            
+            {/* <div className="third_project flex flex-col border-[2px] border-[#e7e5e5] p-[12px] rounded-[20px]">
+              <div className="block_image">
+                <img
+                  src={imgOfFirstProject}
+                  className="rounded-[20px] w-[300px] h-[100%] object-fill"
+                  alt=""
+                />
+              </div>
+              <div className="block_texts">
+                <h1>Formulas for volume of Ice</h1>
+                <p>
+                  In this project I used the library React JS and also this
+                  project is created with Tajik language. This project is
+                  created for solving some mathematical formulas (the volume of
+                  ice), and the mathematical formulas are given. Only we need to
+                  add the number and click the submit button.
+                </p>
+              </div>
+            </div>
+            <div className="fourth_project flex flex-col border-[2px] border-[#e7e5e5] p-[12px] rounded-[20px]">
+              <div className="block_image">
+                <img
+                  src={imgOfFirstProject}
+                  className="rounded-[20px] w-[300px] h-[100%] object-fill"
+                  alt=""
+                />
+              </div>
+              <div className="block_texts">
+                <h1>Formulas for volume of Ice</h1>
+                <p>
+                  In this project I used the library React JS and also this
+                  project is created with Tajik language. This project is
+                  created for solving some mathematical formulas (the volume of
+                  ice), and the mathematical formulas are given. Only we need to
+                  add the number and click the submit button.
+                </p>
+              </div>
+            </div>
+            <div className="fifth_project flex flex-col border-[2px] border-[#e7e5e5] p-[12px] rounded-[20px]">
+              <div className="block_image">
+                <img
+                  src={imgOfFirstProject}
+                  className="rounded-[20px] w-[300px] h-[100%] object-fill"
+                  alt=""
+                />
+              </div>
+              <div className="block_texts">
+                <h1>Formulas for volume of Ice</h1>
+                <p>
+                  In this project I used the library React JS and also this
+                  project is created with Tajik language. This project is
+                  created for solving some mathematical formulas (the volume of
+                  ice), and the mathematical formulas are given. Only we need to
+                  add the number and click the submit button.
+                </p>
+              </div>
+            </div> */}
+          </div>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
           <div className="centering_the_text_s_6 flex justify-center">
