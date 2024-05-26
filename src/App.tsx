@@ -1130,10 +1130,10 @@ const App = () => {
                 />
               </div>
               <div className="block_texts flex flex-col gap-1">
-                <h1 className="text-[22px] font-[600] text-center">
+                <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
                   Formulas for volume of Ice
                 </h1>
-                <p className="text-[16px] font-[400] text-center">
+                <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000]">
                   In this project I used the library React JS and also this
                   project is created with Tajik language. This project is
                   created for solving some mathematical formulas (the volume of
@@ -1144,16 +1144,17 @@ const App = () => {
             </div>
             <div className="second_project rounded-[20px] grid md:grid-cols-[40%_60%] gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
               <div className="block_texts flex flex-col gap-1">
-                <h1 className="text-[22px] font-[600] text-center">
+                <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
                   Hospital Tj
                 </h1>
-                <p className="text-[16px] font-[400] text-center">
+                <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000]">
                   This project is created for showing the Hospitals, their
                   categories, scedule and so on. With this project you can find
-                  your favorite Hospital, about that Hospital and also
-                  its category and its services. This project is created with
+                  your favorite Hospital, about that Hospital and also its
+                  category and its services. This project is created with
                   Russian language.
                 </p>
+                
               </div>
               <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] overflow-hidden rounded-[20px] cursor-pointer">
                 <img
@@ -1163,7 +1164,7 @@ const App = () => {
                 />
               </div>
             </div>
-            
+
             {/* <div className="third_project flex flex-col border-[2px] border-[#e7e5e5] p-[12px] rounded-[20px]">
               <div className="block_image">
                 <img
