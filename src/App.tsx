@@ -1131,28 +1131,22 @@ const App = () => {
               </div>
               <div className="block_texts flex flex-col gap-1">
                 <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
-                  Formulas for volume of Ice
+                  {t("s5.t2")}
                 </h1>
                 <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000]">
-                  In this project I used the library React JS and also this
-                  project is created with Tajik language. This project is
-                  created for solving some mathematical formulas (the volume of
-                  ice), and the mathematical formulas are given. Only we need to
-                  add the number and click the submit button.
+                  {t("s5.t3")}
                 </p>
               </div>
             </div>
             <div className="second_project rounded-[20px] grid md:grid-cols-[40%_60%] gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
               <div className="block_texts flex flex-col gap-1">
                 <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
-                  Hospital Tj
+                  
+                  {t("s5.t4")}
                 </h1>
                 <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000]">
-                  This project is created for showing the Hospitals, their
-                  categories, scedule and so on. With this project you can find
-                  your favorite Hospital, about that Hospital and also its
-                  category and its services. This project is created with
-                  Russian language.
+                  {t("s5.t5")}
+                  
                 </p>
                 
               </div>

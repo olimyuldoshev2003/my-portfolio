@@ -44,7 +44,7 @@
     "t2": "English",
     "t3": "Intermediate",
     "t4": "Russian",
-    "t5":"Good",
+    "t5": "Good",
     "t6": "Tajik",
     "t7": "Fluent",
     "t8": "Studies",
@@ -59,19 +59,25 @@
     "t17": "Programming academy Softclub",
     "t18": "Dushanbe 4.2023-9.2023"
   },
-  "s5": { "t1": " My projects", "t2": "", "t3": "", "t4": "" },
+  "s5": {
+    "t1": " My projects",
+    "t2": "Formulas for volume of Ice",
+    "t3": "In this project I used the library React JS and also this project is created with Tajik language. This project is created for solving some mathematical formulas (the volume of ice), and the mathematical formulas are given. Only we need to add the number and click the submit button.",
+    "t4": "Hospital Tj",
+    "t5": "This project is created for showing the Hospitals, their categories, scedule and so on. With this project you can find your favorite Hospital, about that Hospital and also its category and its services. This project is created with Russian language."
+  },
   "s6": {
     "t1": "Contact with me",
     "t2": "Email",
     "t3": "WhatsApp",
     "t4": "Telegram",
-    "t5":"Instagram",
-    "t6":"GitHub",
-    "t7":"LinkedIn"
+    "t5": "Instagram",
+    "t6": "GitHub",
+    "t7": "LinkedIn"
   },
-  "f":{
-    "t1":"Intrested in my Work",
-    "t2":"Download my CV to know more about me",
-    "t3":"Download CV"
+  "f": {
+    "t1": "Intrested in my Work",
+    "t2": "Download my CV to know more about me",
+    "t3": "Download CV"
   }
 }
