@@ -25,8 +25,8 @@ import imgGit from "./assets/Git-Icon-1788C.png";
 import imgGitHub from "./assets/github.png";
 
 //For images of projects
-import imgOfFirstProject from "./assets/images of projects/formula-volume-ice-image.png"
-import imgOfSecondProject from "./assets/images of projects/hospital-tj-image.png"
+import imgOfFirstProject from "./assets/images of projects/formula-volume-ice-image.png";
+import imgOfSecondProject from "./assets/images of projects/hospital-tj-image.png";
 // import imgOfThirdProject from ""
 
 //For resume
@@ -40,7 +40,7 @@ const App = () => {
   //for translation
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (language: any) => {
+  const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
   };
 
@@ -196,7 +196,7 @@ const App = () => {
   return (
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
       <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
-        <div className="block_header md:p-[20px_60px] sm:p-[20px_5px] flex justify-between max-w-[1440px] m-[0_auto]">
+        <div className="block_header md:p-[20px_60px] sm:p-[20px_21px] flex justify-between max-w-[1440px] m-[0_auto]">
           <div>
             <a
               href="#home"
@@ -206,7 +206,7 @@ const App = () => {
                 setIsMenuClicked(false);
               }}
             >
-              <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
+              <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.5s]">
                 Olim Karomatov
               </h1>
             </a>
@@ -215,7 +215,7 @@ const App = () => {
             <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#home"
                 >
                   {t("h.t1")}
@@ -223,7 +223,7 @@ const App = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#about"
                 >
                   {t("h.t2")}
@@ -231,7 +231,7 @@ const App = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#skills"
                 >
                   {t("h.t3")}
@@ -239,7 +239,7 @@ const App = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#language"
                 >
                   {t("h.t4")}
@@ -247,7 +247,7 @@ const App = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#studies"
                 >
                   {t("h.t5")}
@@ -255,7 +255,7 @@ const App = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#courses"
                 >
                   {t("h.t6")}
@@ -263,7 +263,7 @@ const App = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#projects"
                 >
                   {t("h.t7")}
@@ -271,7 +271,7 @@ const App = () => {
               </li>
               <li>
                 <a
-                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
+                  className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#contacts"
                 >
                   {t("h.t8")}
@@ -286,7 +286,7 @@ const App = () => {
                 <select
                   name=""
                   id=""
-                  className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.7s] cursor-pointer"
+                  className="outline-none border-[2px] border-[solid] border-[#fff] bg-[#1f1f1f] text-[#fff] dark:bg-[#fff] dark:text-[#000] dark:border-[#000] duration-[0.5s] cursor-pointer"
                   onChange={(event) => changeLanguage(event.target.value)}
                 >
                   <option
@@ -337,111 +337,191 @@ const App = () => {
         <nav
           className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed md:top-[80px] sm:top-[71px] z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
         >
-          <ul className="sm:flex sm:flex-col sm:items-center sm:flex-wrap sm:gap-[10px] lg:hidden poppins h-[100vh]">
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#home"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t1")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#about"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t2")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#skills"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t3")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#language"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t4")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#studies"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t5")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#courses"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t6")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#projects"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t7")}
-              </a>
-            </li>
-            <li>
-              <a
-                className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.7s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                href="#contacts"
-                onClick={() => {
-                  setBurgerClass("unclicked");
-                  setMenuClass("links_hidden");
-                  setIsMenuClicked(false);
-                }}
-              >
-                {t("h.t8")}
-              </a>
-            </li>
+          <ul className="sm:flex sm:flex-col sm:flex-wrap sm:gap-[10px] lg:hidden poppins h-[80vh] overflow-y-auto px-4">
+            <a
+              className=""
+              href="#home"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#home"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t1")}
+                </a>
+              </li>
+            </a>
+            <a
+              className=""
+              href="#about"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#about"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t2")}
+                </a>
+              </li>
+            </a>
+            <a
+              className=""
+              href="#skills"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#skills"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t3")}
+                </a>
+              </li>
+            </a>
+            <a
+              className=""
+              href="#language"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#language"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t4")}
+                </a>
+              </li>
+            </a>
+            <a
+              className=""
+              href="#studies"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#studies"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t5")}
+                </a>
+              </li>
+            </a>
+            <a
+              className=""
+              href="#courses"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#courses"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t6")}
+                </a>
+              </li>
+            </a>
+            <a
+              className=""
+              href="#projects"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#projects"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t7")}
+                </a>
+              </li>
+            </a>
+            <a
+              className=""
+              href="#contacts"
+              onClick={() => {
+                setBurgerClass("unclicked");
+                setMenuClass("links_hidden");
+                setIsMenuClicked(false);
+              }}
+            >
+              <li className="text-center hover:bg-sky-500 py-1 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline border-[2px] rounded-[5px] border-[#fff] hover:border-none dark:border-[#000] dark:hover:border-none">
+                <a
+                  className="text-[20px] font-[400]"
+                  href="#contacts"
+                  onClick={() => {
+                    setBurgerClass("unclicked");
+                    setMenuClass("links_hidden");
+                    setIsMenuClicked(false);
+                  }}
+                >
+                  {t("h.t8")}
+                </a>
+              </li>
+            </a>
           </ul>
         </nav>
       </div>
@@ -452,25 +532,25 @@ const App = () => {
         <button
           className={`${
             backToTopBtn ? `block` : `hidden`
-          } p-[5px] bg-[#fff] text-[#1f1f1f] text-[32px] rounded-[5px] fixed bottom-[20px] right-[20px] dark:bg-[#1f1f1f] dark:text-[#fff] duration-[0.7s] z-40`}
+          } p-[5px] bg-[#fff] text-[#1f1f1f] text-[32px] rounded-[5px] fixed bottom-[20px] right-[20px] dark:bg-[#1f1f1f] dark:text-[#fff] duration-[0.5s] z-40`}
           onClick={() => {
             window.scrollTo(0, 0);
           }}
         >
           <RiArrowDropUpLine />
         </button>
-        <h1 className="text-center text-[#fff] dark:text-[#1f1f1f] md:text-[70px] sm:text-[35px] uppercase duration-[0.7s]">
+        <h1 className="text-center text-[#fff] dark:text-[#1f1f1f] md:text-[70px] sm:text-[35px] uppercase duration-[0.5s]">
           {t("main.t")}
         </h1>
         <section className="section_1 flex md:justify-between items-center sm:flex-wrap-reverse md:flex-nowrap gap-[50px] sm:justify-center mt-[30px] max-w-[1440px] m-[0_auto]">
           <div className="flex flex-col gap-[15px] items-start" id="contact">
-            <h4 className="poppins text-[#fff] text-[25px] font-[300] dark:text-[#1f1f1f] duration-[0.7s]">
+            <h4 className="poppins text-[#fff] text-[25px] font-[300] dark:text-[#1f1f1f] duration-[0.5s]">
               {t("s1.t1")}
             </h4>
-            <h1 className="poppins text-[#FFFFFF] md:text-[60px] sm:text-[34px] font-[600] dark:text-[#1f1f1f] duration-[0.7s]">
+            <h1 className="poppins text-[#FFFFFF] md:text-[60px] sm:text-[34px] font-[600] dark:text-[#1f1f1f] duration-[0.5s]">
               {t("s1.t2")}
             </h1>
-            <h5 className="poppins text-[#FFFFFF] text-[20px] font-[300] duration-[0.7s] dark:text-[#1f1f1f]">
+            <h5 className="poppins text-[#FFFFFF] text-[20px] font-[300] duration-[0.5s] dark:text-[#1f1f1f]">
               {t("s1.t3")}
             </h5>
             <object
@@ -480,23 +560,23 @@ const App = () => {
             ></object>
             {/* <embed src={myResume} type="" /> */}
             <a href={myResume} download={myResume}>
-              <button className="p-[16px_13px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.7s]">
+              <button className="p-[16px_13px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.5s]">
                 {t("s1.t4")}
               </button>
             </a>
             <div className="social_links flex items-center gap-2">
               <a href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/">
-                <FaLinkedinIn className="text-[30px] text-[#c2c0c0] dark:text-[#464545] font-[700] duration-[0.7s] hover:text-[#fff] dark:hover:text-[#000] hover:scale-110" />
+                <FaLinkedinIn className="text-[30px] text-[#c2c0c0] dark:text-[#464545] font-[700] duration-[0.5s] hover:text-[#fff] dark:hover:text-[#000] hover:scale-110" />
               </a>
               <a href="https://github.com/olimyuldoshev2003">
-                <FiGithub className="text-[30px] text-[#c2c0c0] dark:text-[#464545] font-[700] duration-[0.7s] hover:text-[#fff] dark:hover:text-[#000] hover:scale-110" />
+                <FiGithub className="text-[30px] text-[#c2c0c0] dark:text-[#464545] font-[700] duration-[0.5s] hover:text-[#fff] dark:hover:text-[#000] hover:scale-110" />
               </a>
               <a
                 href="https://t.me/olim_yuldoshev_ooo3"
-                className="flex items-center gap-3 text-[16px] text-[#000] dark:text-[#fff] font-[700] duration-[0.7s] p-[10px] bg-[#c2c0c0] dark:bg-[#464545] rounded-[15px] hover:bg-[#fff] dark:hover:bg-[#000] hover:scale-105"
+                className="flex items-center gap-3 text-[16px] text-[#000] dark:text-[#fff] font-[700] duration-[0.5s] p-[10px] bg-[#c2c0c0] dark:bg-[#464545] rounded-[15px] hover:bg-[#fff] dark:hover:bg-[#000] hover:scale-105"
               >
                 {t("s1.t5")}
-                <FaTelegramPlane className="text-[19px] text-[#000] dark:text-[#fff] font-[700] duration-[0.7s]" />
+                <FaTelegramPlane className="text-[19px] text-[#000] dark:text-[#fff] font-[700] duration-[0.5s]" />
               </a>
             </div>
           </div>
@@ -509,7 +589,7 @@ const App = () => {
           id="about"
         >
           <div className="for_text_about_me_s_2 flex justify-center">
-            <h1 className="border-t-[3px] border-t-[#fff] dark:border-[#000] text-center text-[#fff] dark:text-[#1f1f1f] md:text-[50px] sm:text-[35px] uppercase duration-[0.7s] md:max-w-[340px] sm:max-w-[246px]">
+            <h1 className="border-t-[3px] border-t-[#fff] dark:border-[#000] text-center text-[#fff] dark:text-[#1f1f1f] md:text-[50px] sm:text-[35px] uppercase duration-[0.5s] md:max-w-[340px] sm:max-w-[246px]">
               {t("s2.t1")}
             </h1>
           </div>
@@ -518,13 +598,13 @@ const App = () => {
               <img src={imgS1} alt="" />
             </div>
             <div className="flex flex-col gap-[10px]">
-              <h1 className="text-[#FFFFFF] lg:text-[100px] md:text-[60px] sm:text-[40px] font-[400] dark:text-[#1f1f1f] duration-[0.7s]">
+              <h1 className="text-[#FFFFFF] lg:text-[100px] md:text-[60px] sm:text-[40px] font-[400] dark:text-[#1f1f1f] duration-[0.5s]">
                 {t("s2.t2")}
               </h1>
-              <h1 className="text-[#040ca1] lg:text-[100px] md:text-[60px] sm:text-[40px] font-[400] duration-[0.7s]">
+              <h1 className="text-[#040ca1] lg:text-[100px] md:text-[60px] sm:text-[40px] font-[400] duration-[0.5s]">
                 {t("s2.t3")}
               </h1>
-              <p className="text-[#fff] dark:text-[#1f1f1f] text-[14px] font-[400] max-w-[521px] duration-[0.7s]">
+              <p className="text-[#fff] dark:text-[#1f1f1f] text-[14px] font-[400] max-w-[521px] duration-[0.5s]">
                 {t("s2.t4")}
               </p>
             </div>
@@ -535,11 +615,11 @@ const App = () => {
           id="skills"
         >
           <div className="block_centering_s_3_skills flex justify-center">
-            <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[300px] sm:max-w-[146px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
+            <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[300px] sm:max-w-[146px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.5s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
               {t("s3.t1")}
             </h1>
           </div>
-          <div className="icons_of_my_skills flex justify-center gap-[50px] flex-wrap mt-[50px] duration-[0.7s]">
+          <div className="icons_of_my_skills flex justify-center gap-[50px] flex-wrap mt-[50px] duration-[0.5s]">
             <img src={imgCSS} alt="" />
             <img src={imgHTML} alt="" />
             <img src={imgJS} alt="" />
@@ -551,7 +631,7 @@ const App = () => {
           </div>
           <div className="my_skills_with_percent mt-[40px]">
             <div className="icons_of_my_skills_with_percent flex justify-center">
-              <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[300px] sm:max-w-[220px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
+              <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[300px] sm:max-w-[220px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.5s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
                 {t("s3.t2")}
               </h1>
             </div>
@@ -562,7 +642,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {t("s3.t3")}
                     </h1>
                     <meter
@@ -572,7 +652,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {CPlusPlus}%
                     </h1>
                   </div>
@@ -582,7 +662,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       HTML
                     </h1>
                     <meter
@@ -592,7 +672,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {HTML}%
                     </h1>
                   </div>
@@ -602,7 +682,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       CSS
                     </h1>
                     <meter
@@ -612,7 +692,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {CSS}%
                     </h1>
                   </div>
@@ -622,7 +702,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       SCSS
                     </h1>
                     <meter
@@ -632,7 +712,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {SCSS}%
                     </h1>
                   </div>
@@ -642,7 +722,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       SASS
                     </h1>
                     <meter
@@ -652,7 +732,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {SASS}%
                     </h1>
                   </div>
@@ -662,7 +742,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       JavaScript
                     </h1>
                     <meter
@@ -672,7 +752,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {JS}%
                     </h1>
                   </div>
@@ -682,7 +762,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       TypeScript
                     </h1>
                     <meter
@@ -692,7 +772,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {TS}%
                     </h1>
                   </div>
@@ -702,7 +782,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       ReactJS
                     </h1>
                     <meter
@@ -712,7 +792,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {reactJS}%
                     </h1>
                   </div>
@@ -722,7 +802,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       ReactTS
                     </h1>
                     <meter
@@ -732,7 +812,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {reactTS}%
                     </h1>
                   </div>
@@ -744,7 +824,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       Redux Toolkit
                     </h1>
                     <meter
@@ -754,7 +834,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {redux}%
                     </h1>
                   </div>
@@ -764,7 +844,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       Git
                     </h1>
                     <meter
@@ -774,7 +854,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {git}%
                     </h1>
                   </div>
@@ -784,7 +864,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       GitHub
                     </h1>
                     <meter
@@ -794,7 +874,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {gitHub}%
                     </h1>
                   </div>
@@ -804,7 +884,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       TailwindCSS
                     </h1>
                     <meter
@@ -814,7 +894,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {tailwind}%
                     </h1>
                   </div>
@@ -824,7 +904,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       Material UI
                     </h1>
                     <meter
@@ -834,7 +914,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {materialUI}%
                     </h1>
                   </div>
@@ -844,7 +924,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       Ant Design
                     </h1>
                     <meter
@@ -854,7 +934,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {antDesign}%
                     </h1>
                   </div>
@@ -864,7 +944,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       Rest API
                     </h1>
                     <meter
@@ -874,7 +954,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {RESTAPI}%
                     </h1>
                   </div>
@@ -884,7 +964,7 @@ const App = () => {
                     <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
                   </div>
                   <div className="block_2 flex flex-col gap-2">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       Next JS
                     </h1>
                     <meter
@@ -894,7 +974,7 @@ const App = () => {
                     ></meter>
                   </div>
                   <div className="block_3">
-                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.7s]">
+                    <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
                       {nextJS}%
                     </h1>
                   </div>
@@ -905,18 +985,18 @@ const App = () => {
         </section>
         <section className="section_4 mt-[50px] flex md:justify-between items-start sm:flex-wrap sm:justify-center gap-[30px] max-w-[1440px] m-[0_auto]">
           <div className="item_1_s_4" id="language">
-            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] dark:border-[#1f1f1f] duration-[0.7s]">
+            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] dark:border-[#1f1f1f] duration-[0.5s]">
               {t("s4.t1")}
             </h2>
             <div className="mt-[24px]">
               <div>
                 <div>
-                  <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
+                  <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.5s]">
                     {t("s4.t2")}
                   </h2>
                 </div>
                 <div className="flex flex-col w-[218px] ">
-                  <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.7s]">
+                  <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.5s]">
                     {t("s4.t3")}
                   </p>
                   <hr className="btn_grad w-[220px] py-[10px] mt-[5px]" />
@@ -925,12 +1005,12 @@ const App = () => {
 
               <div className="mt-[30px]">
                 <div>
-                  <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
+                  <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.5s]">
                     {t("s4.t4")}
                   </h2>
                 </div>
                 <div className="flex flex-col w-[86px] ">
-                  <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.7s]">
+                  <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.5s]">
                     {t("s4.t5")}
                   </p>
                   <hr className="btn_grad w-[90px] py-[10px] mt-[5px]" />
@@ -938,12 +1018,12 @@ const App = () => {
               </div>
               <div className="mt-[30px]">
                 <div>
-                  <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
+                  <h2 className="text-[#FFFFFF] text-[29px] font-[600] poppins dark:text-[#1f1f1f] poppins duration-[0.5s]">
                     {t("s4.t6")}
                   </h2>
                 </div>
                 <div className="flex flex-col w-[280px] ">
-                  <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.7s]">
+                  <p className="text-[#FFFFFF] text-[14px] font-[600] text-end dark:text-[#1f1f1f] poppins duration-[0.5s]">
                     {t("s4.t7")}
                   </p>
                   <hr className="btn_grad w-[280px] py-[10px] mt-[5px]" />
@@ -952,7 +1032,7 @@ const App = () => {
             </div>
           </div>
           <div className="item_2_s_4" id="studies">
-            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] dark:border-[#1f1f1f] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] duration-[0.7s]">
+            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] dark:border-[#1f1f1f] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] duration-[0.5s]">
               {t("s4.t8")}
             </h2>
             <div className="flex items-center gap-5 mt-[40px]">
@@ -984,20 +1064,20 @@ const App = () => {
                 </svg>
               </div>
               <div className="second_block_texts">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] md:text-[29px] sm:text-[21px] font-[600] poppins duration-[0.7s] max-w-[300px]">
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] md:text-[29px] sm:text-[21px] font-[600] poppins duration-[0.5s] max-w-[300px]">
                   {t("s4.t9")}
                 </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins duration-[0.7s]">
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins duration-[0.5s]">
                   {t("s4.t11")}
                 </p>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins duration-[0.7s]">
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[16px] font-[300] poppins duration-[0.5s]">
                   {t("s4.t10")}
                 </p>
               </div>
             </div>
           </div>
           <div className="courses" id="courses">
-            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] dark:border-[#1f1f1f] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] poppins duration-[0.7s]">
+            <h2 className="text-[#FFFFFF] md:text-[56px] sm:text-[37px] font-[600] border-b-[2px] border-b-[#fff] dark:border-[#1f1f1f] max-w-[280px] pb-[10px] poppins dark:text-[#1f1f1f] poppins duration-[0.5s]">
               {t("s4.t12")}
             </h2>
             <div className="flex items-center gap-5 mt-[40px]">
@@ -1029,10 +1109,10 @@ const App = () => {
                 </svg>
               </div>
               <div className="second_block_texts ">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] text-[29px] font-[600] poppins duration-[0.7s] max-w-[300px]">
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] text-[29px] font-[600] poppins duration-[0.5s] max-w-[300px]">
                   {t("s4.t13")}
                 </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[18px] font-[300] poppins duration-[0.7s] max-w-[300px]">
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] text-[18px] font-[300] poppins duration-[0.5s] max-w-[300px]">
                   {t("s4.t14")}
                 </p>
               </div>
@@ -1066,10 +1146,10 @@ const App = () => {
                 </svg>
               </div>
               <div className="second_block_texts">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] md:text-[29px] sm:text-[21px] poppins font-[600] duration-[0.7s] max-w-[300px]">
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] md:text-[29px] sm:text-[21px] poppins font-[600] duration-[0.5s] max-w-[300px]">
                   {t("s4.t15")}
                 </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f]  text-[16px] font-[300] poppins duration-[0.7s]">
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f]  text-[16px] font-[300] poppins duration-[0.5s]">
                   {t("s4.t16")}
                 </p>
               </div>
@@ -1103,10 +1183,10 @@ const App = () => {
                 </svg>
               </div>
               <div className="second_block_texts">
-                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] poppins md:text-[29px] sm:text-[21px] font-[600] duration-[0.7s] max-w-[300px]">
+                <h2 className="text-[#FFFFFF] dark:text-[#1f1f1f] poppins md:text-[29px] sm:text-[21px] font-[600] duration-[0.5s] max-w-[300px]">
                   {t("s4.t17")}
                 </h2>
-                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] duration-[0.7s] text-[16px] font-[300] poppins">
+                <p className="text-[#E3E1E1] dark:text-[#1f1f1f] duration-[0.5s] text-[16px] font-[300] poppins">
                   {t("s4.t18")}
                 </p>
               </div>
@@ -1117,7 +1197,7 @@ const App = () => {
           className="section_5 mt-[60px] max-w-[1440px] m-[0_auto]"
           id="projects"
         >
-          <h1 className="poppins border-t-[3px] border-t-[#fff] max-w-[500px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center m-[0_auto]">
+          <h1 className="poppins border-t-[3px] border-t-[#fff] max-w-[500px] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.5s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center m-[0_auto]">
             {t("s5.t1")}
           </h1>
           <div className="projects mt-[50px] flex flex-wrap items-center justify-center gap-2">
@@ -1138,17 +1218,14 @@ const App = () => {
                 </p>
               </div>
             </div>
-            <div className="second_project rounded-[20px] grid md:grid-cols-[40%_60%] gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
+            <div className="second_project rounded-[20px] md:grid md:grid-cols-[40%_60%] flex flex-col-reverse gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
               <div className="block_texts flex flex-col gap-1">
                 <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
-                  
                   {t("s5.t4")}
                 </h1>
                 <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000]">
                   {t("s5.t5")}
-                  
                 </p>
-                
               </div>
               <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] overflow-hidden rounded-[20px] cursor-pointer">
                 <img
@@ -1158,69 +1235,11 @@ const App = () => {
                 />
               </div>
             </div>
-
-            {/* <div className="third_project flex flex-col border-[2px] border-[#e7e5e5] p-[12px] rounded-[20px]">
-              <div className="block_image">
-                <img
-                  src={imgOfFirstProject}
-                  className="rounded-[20px] w-[300px] h-[100%] object-fill"
-                  alt=""
-                />
-              </div>
-              <div className="block_texts">
-                <h1>Formulas for volume of Ice</h1>
-                <p>
-                  In this project I used the library React JS and also this
-                  project is created with Tajik language. This project is
-                  created for solving some mathematical formulas (the volume of
-                  ice), and the mathematical formulas are given. Only we need to
-                  add the number and click the submit button.
-                </p>
-              </div>
-            </div>
-            <div className="fourth_project flex flex-col border-[2px] border-[#e7e5e5] p-[12px] rounded-[20px]">
-              <div className="block_image">
-                <img
-                  src={imgOfFirstProject}
-                  className="rounded-[20px] w-[300px] h-[100%] object-fill"
-                  alt=""
-                />
-              </div>
-              <div className="block_texts">
-                <h1>Formulas for volume of Ice</h1>
-                <p>
-                  In this project I used the library React JS and also this
-                  project is created with Tajik language. This project is
-                  created for solving some mathematical formulas (the volume of
-                  ice), and the mathematical formulas are given. Only we need to
-                  add the number and click the submit button.
-                </p>
-              </div>
-            </div>
-            <div className="fifth_project flex flex-col border-[2px] border-[#e7e5e5] p-[12px] rounded-[20px]">
-              <div className="block_image">
-                <img
-                  src={imgOfFirstProject}
-                  className="rounded-[20px] w-[300px] h-[100%] object-fill"
-                  alt=""
-                />
-              </div>
-              <div className="block_texts">
-                <h1>Formulas for volume of Ice</h1>
-                <p>
-                  In this project I used the library React JS and also this
-                  project is created with Tajik language. This project is
-                  created for solving some mathematical formulas (the volume of
-                  ice), and the mathematical formulas are given. Only we need to
-                  add the number and click the submit button.
-                </p>
-              </div>
-            </div> */}
           </div>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
           <div className="centering_the_text_s_6 flex justify-center">
-            <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[500px] sm:max-w-[100%] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.7s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
+            <h1 className="poppins border-t-[3px] border-t-[#fff] md:max-w-[500px] sm:max-w-[100%] dark:text-[#1f1f1f] dark:border-[#1f1f1f] pt-[20px] duration-[0.5s] text-[#FFFFFF] md:text-[50px] sm:text-[35px] font-[600] text-center">
               {t("s6.t1")}
             </h1>
           </div>
@@ -1229,13 +1248,13 @@ const App = () => {
               href="mailto: oyuldoshev39@gmail.com"
               className="email border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
-              <MdAttachEmail className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
+              <MdAttachEmail className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.5s]" />
               <div className="block_for_text flex justify-center">
-                <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s] text-center">
+                <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.5s] text-center">
                   {t("s6.t2")}
                 </h1>
               </div>
-              <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
+              <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.5s] cursor-pointer">
                 oyuldoshev39@gmail.com
               </p>
             </a>
@@ -1243,11 +1262,11 @@ const App = () => {
               href="https://web.whatsapp.com/992919697875"
               className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
-              <FaWhatsapp className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
-              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
+              <FaWhatsapp className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.5s]" />
+              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.5s]">
                 {t("s6.t3")}
               </h1>
-              <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s] cursor-pointer">
+              <p className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.5s] cursor-pointer">
                 +992919697875
               </p>
             </a>
@@ -1255,13 +1274,13 @@ const App = () => {
               href="https://t.me/olim_yuldoshev_ooo3"
               className="telegram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
-              <FaTelegramPlane className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
-              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
+              <FaTelegramPlane className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.5s]" />
+              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.5s]">
                 {t("s6.t4")}
               </h1>
               <a
                 href="https://t.me/olim_yuldoshev_ooo3"
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.5s]"
               >
                 @olim_yuldoshev_ooo3
               </a>
@@ -1270,13 +1289,13 @@ const App = () => {
               href="https://www.instagram.com/olim_yuldoshev_ooo3/"
               className="instagram border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
-              <FaInstagram className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
-              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
+              <FaInstagram className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.5s]" />
+              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.5s]">
                 {t("s6.t5")}
               </h1>
               <a
                 href="https://www.instagram.com/olim_yuldoshev_ooo3/"
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.5s]"
               >
                 @olim_yuldoshev_ooo3
               </a>
@@ -1285,13 +1304,13 @@ const App = () => {
               href="https://github.com/olimyuldoshev2003"
               className="gitHub border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
-              <FiGithub className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
-              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
+              <FiGithub className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.5s]" />
+              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.5s]">
                 {t("s6.t6")}
               </h1>
               <a
                 href="https://github.com/olimyuldoshev2003"
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.5s]"
               >
                 @olimyuldoshev2003
               </a>
@@ -1300,13 +1319,13 @@ const App = () => {
               href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/"
               className="linkedIn border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
             >
-              <FaLinkedinIn className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.7s]" />
-              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.7s]">
+              <FaLinkedinIn className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.5s]" />
+              <h1 className="text-[30px] text-[#fff] dark:text-[#000] font-[700] duration-[0.5s]">
                 {t("s6.t7")}
               </h1>
               <a
                 href="https://www.linkedin.com/in/olim-yuldoshev-36793b264/"
-                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.7s]"
+                className="text-[19px] text-[#fff] dark:text-[#000] hover:underline duration-[0.5s]"
               >
                 Olim Yuldoshev
               </a>
@@ -1316,11 +1335,11 @@ const App = () => {
       </main>
       <footer className="footer mt-[60px] flex flex-col justify-center items-center gap-4">
         <div className="footer_block_1">
-          <h1 className="dark:text-[#1f1f1f] text-[#fff] md:text-[56px] sm:text-[38px] font-[600] text-center duration-[0.7s]">
+          <h1 className="dark:text-[#1f1f1f] text-[#fff] md:text-[56px] sm:text-[38px] font-[600] text-center duration-[0.5s]">
             {t("f.t1")}
           </h1>
           <div className="for_p_foote flex justify-center">
-            <p className="dark:text-[#1f1f1f] text-[#9E9E9E] text-[19px] font-[400] text-center duration-[0.7s] max-w-[300px]">
+            <p className="dark:text-[#1f1f1f] text-[#9E9E9E] text-[19px] font-[400] text-center duration-[0.5s] max-w-[300px]">
               {t("f.t2")}
             </p>
           </div>
@@ -1329,7 +1348,7 @@ const App = () => {
             download={myResume}
             className="flex justify-center mt-[20px]"
           >
-            <button className="p-[16px_13px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.7s]">
+            <button className="p-[16px_13px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.5s]">
               {t("f.t3")}
             </button>
           </a>
