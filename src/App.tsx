@@ -196,7 +196,7 @@ const App = () => {
   return (
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
       <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
-        <div className="block_header md:p-[20px_60px] sm:p-[20px_21px] flex justify-between max-w-[1440px] m-[0_auto]">
+        <div className="block_header md:p-[20px_60px] sm:p-[20px_8px] flex justify-between max-w-[1440px] m-[0_auto]">
           <div>
             <a
               href="#home"
