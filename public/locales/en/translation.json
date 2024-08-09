@@ -61,10 +61,18 @@
   },
   "s5": {
     "t1": " My projects",
-    "t2": "Formulas for volume of Ice",
-    "t3": "In this project I used the library React JS and also this project is created with Tajik language. This project is created for solving some mathematical formulas (the volume of ice), and the mathematical formulas are given. Only we need to add the number and click the submit button.",
-    "t4": "Hospital Tj",
-    "t5": "This project is created for showing the Hospitals, their categories, scedule and so on. With this project you can find your favorite Hospital, about that Hospital and also its category and its services. This project is created with Russian language."
+    "t2": "Userlist with JS",
+    "t3": "This project is created with pure HTML, CSS and JS and this project helps to get users, add user, view user by id, edit user by id, delete user by id, search user by everything and filter user by city and by status. It's known as CRUD (Create / Read / Update / Delete) project.",
+    "t4": "Hospital TJ",
+    "t5": "This project is created with React JS and for showing the Hospitals, their categories, scedule and so on. With this project you can find your favorite Hospital, about that Hospital, its category and its services. This project is created with Russian language. And also the database (the server side) is created with the programming language Python and database PostgreSQL.",
+    "t6": "Post Office",
+    "t7": "This project is created with the React JS and used the fake database of the post offices in the server side of this project. With this project you can find some Post Offices of the cities of India. For seeing the Post Offices you need to write the correct Zip Code. The Zip Codes starts from 800001 to 800029.",
+    "t8": "Kamil Nurmatov website",
+    "t9": "This project id created with React JS and for one of the best singer, techer and inventor of Tajikistan Kamil Nurmatov. With this website you can see everything about him like his fullname, his history, his songs and videos and his inventions.",
+    "t10": "Memory Game",
+    "t11": "This game is created with pure HTML, CSS and JS and created for people, who loves playing games. This is the simple game and people can play this game.",
+    "t12": "Formulas for volume of Ice",
+    "t13": "In this project I used the library React JS and also this project is created with Tajik language. This project is created for solving some mathematical formulas (the volume of ice), and the mathematical formulas are given. Only we need to add the number and click the submit button."
   },
   "s6": {
     "t1": "Contact with me",

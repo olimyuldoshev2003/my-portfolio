@@ -25,7 +25,7 @@ import imgGit from "./assets/Git-Icon-1788C.png";
 import imgGitHub from "./assets/github.png";
 
 //For images of projects
-import imgOfFirstProject from "./assets/images of projects/formula-volume-ice-image.png";
+import imgOfFirstProject from "./assets/images of projects/userlist-with-js-project.png";
 import imgOfSecondProject from "./assets/images of projects/hospital-tj-image.png";
 // import imgOfThirdProject from ""
 
@@ -117,100 +117,77 @@ const App = () => {
   const [RESTAPI] = useState<number>(82);
   const [nextJS] = useState<number>(50);
 
-  // const [state, setState] = React.useState({
-  //   top: false,
-  //   left: false,
-  //   bottom: false,
-  //   right: false,
-  // });
-
-  // const toggleDrawer =
-  //   (anchor: Anchor, open: boolean) =>
-  //   (event: React.KeyboardEvent | React.MouseEvent) => {
-  //     if (
-  //       event.type === "keydown" &&
-  //       ((event as React.KeyboardEvent).key === "Tab" ||
-  //         (event as React.KeyboardEvent).key === "Shift")
-  //     ) {
-  //       return;
-  //     }
-
-  //     setState({ ...state, [anchor]: open });
-  //   };
-
-  // const list = (anchor: Anchor) => (
-  //   <Box
-  //     sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
-  //     role="presentation"
-  //     onClick={toggleDrawer(anchor, false)}
-  //     onKeyDown={toggleDrawer(anchor, false)}
-  //     className="bg-[#1f1f1f] text-[#fff] dark:text-[#1f1f1f] dark:bg-[#fff]"
-  //   >
-  //     <List>
-  //       {[
-  //         {
-  //           id: "#home",
-  //           section: t("h.t1"),
-  //         },
-  //         {
-  //           id: "#about",
-  //           section: t("h.t2"),
-  //         },
-  //         {
-  //           id: "#skills",
-  //           section: t("h.t3"),
-  //         },
-  //         {
-  //           id: "#language",
-  //           section: t("h.t4"),
-  //         },
-  //         {
-  //           id: "#studies",
-  //           section: t("h.t5"),
-  //         },
-  //         {
-  //           id: "#courses",
-  //           section: t("h.t6"),
-  //         },
-  //         {
-  //           id: "#projects",
-  //           section: t("h.t7"),
-  //         },
-  //         {
-  //           id: "#contacts",
-  //           section: t("h.t8"),
-  //         },
-  //       ].map((text) => (
-  //         <a href={text.id} key={text.id}>
-  //           <ListItem key={text.section} disablePadding>
-  //             <ListItemButton>
-  //               <ListItemText primary={text.section} />
-  //             </ListItemButton>
-  //           </ListItem>
-  //         </a>
-  //       ))}
-  //     </List>
-  //   </Box>
-  // );
+  const projects = [
+    {
+      id: 1,
+      imgOfProject: imgOfFirstProject,
+      project: t("s5.t2"),
+      description: t("s5.t3"),
+      usedLang: [
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+      ],
+      demo: ``,
+      code: ``,
+    },
+    {
+      id: 2,
+      imgOfProject: imgOfSecondProject,
+      project: t("s5.t4"),
+      description: t("s5.t5"),
+      usedLang: [
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+      ],
+      demo: ``,
+      code: ``,
+    },
+  ];
 
   return (
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
       <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
         <div className="block_header md:p-[20px_60px] sm:p-[20px_8px] flex justify-between max-w-[1440px] m-[0_auto]">
-          <div>
-            <a
-              href="#home"
-              onClick={() => {
-                setBurgerClass("unclicked");
-                setMenuClass("links_hidden");
-                setIsMenuClicked(false);
-              }}
-            >
-              <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.5s]">
-                Olim Karomatov
-              </h1>
-            </a>
-          </div>
+          <a
+            href="#home"
+            onClick={() => {
+              setBurgerClass("unclicked");
+              setMenuClass("links_hidden");
+              setIsMenuClicked(false);
+            }}
+          >
+            <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.5s]">
+              Olim Karomatov
+            </h1>
+          </a>
           <nav className="flex items-center gap-[10px]">
             <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
               <li>
@@ -1201,24 +1178,33 @@ const App = () => {
             {t("s5.t1")}
           </h1>
           <div className="projects mt-[50px] flex flex-wrap items-center justify-center gap-2">
-            <div className="first_project rounded-[20px] grid md:grid-cols-[60%_40%] border-[2px] border-[#e7e5e5] p-[20px] gap-3">
-              <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
-                <img
-                  src={imgOfFirstProject}
-                  className="rounded-[20px] max-w-[100%] h-auto translate-y-0 hover:translate-y-[-80%] duration-[5s] cursor-pointer"
-                  alt=""
-                />
-              </div>
-              <div className="block_texts flex flex-col gap-1">
-                <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
-                  {t("s5.t2")}
-                </h1>
-                <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000]">
-                  {t("s5.t3")}
-                </p>
-              </div>
-            </div>
-            <div className="second_project rounded-[20px] md:grid md:grid-cols-[40%_60%] flex flex-col-reverse gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
+            {projects.map((item, index: number) => {
+              return (
+                <div
+                  className={`each_project rounded-[20px] flex ${
+                    index % 2 !== 0 && `md:flex-row-reverse`
+                  } sm:flex-wrap md:flex-nowrap border-[2px] border-[#e7e5e5] p-[20px] gap-3`}
+                >
+                  <div className="block_image w-auto h-[160px] sm:h-[240px] box-amazon overflow-hidden rounded-[20px]">
+                    <img
+                      src={item.imgOfProject}
+                      className="rounded-[20px] max-w-[100%] h-auto translate-y-0 hover:translate-y-[-80%] duration-[5s] cursor-pointer"
+                      alt=""
+                    />
+                  </div>
+                  <div className="block_texts flex flex-col gap-1">
+                    <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
+                      {item.project}
+                    </h1>
+                    <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000] max-w-[90rem]">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* <div className="second_project rounded-[20px] md:grid md:grid-cols-[40%_60%] flex flex-col-reverse gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
               <div className="block_texts flex flex-col gap-1">
                 <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
                   {t("s5.t4")}
@@ -1234,7 +1220,7 @@ const App = () => {
                   alt=""
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
