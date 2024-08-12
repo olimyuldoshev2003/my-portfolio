@@ -248,8 +248,8 @@ const App = () => {
           ProgLang: ``,
         },
       ],
-      demo: `https://formula-ice.vercel.app/`,
-      code: `https://github.com/olimyuldoshev2003/Formulas-for-University`,
+      demo: `https://memory-game-fruits.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/Memory-game`,
     },
     {
       id: 6,
@@ -274,8 +274,8 @@ const App = () => {
           ProgLang: ``,
         },
       ],
-      demo: ``,
-      code: ``,
+      demo: `https://formula-ice.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/Formulas-for-University`,
     },
   ];
 
