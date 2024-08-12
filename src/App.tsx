@@ -11,7 +11,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 // import { FaLinkedin } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { RiArrowDropUpLine } from "react-icons/ri";
+import { RiArrowDropUpLine, RiLiveLine } from "react-icons/ri";
 
 //For images
 import imgS1 from "./assets/my-photo.jpg";
@@ -27,7 +27,10 @@ import imgGitHub from "./assets/github.png";
 //For images of projects
 import imgOfFirstProject from "./assets/images of projects/userlist-with-js-project.png";
 import imgOfSecondProject from "./assets/images of projects/hospital-tj-image.png";
-// import imgOfThirdProject from ""
+import imgOfThirdProject from "./assets/images of projects/post-office-project.png";
+import imgOfFourthProject from "./assets/images of projects/kamil-nurmatov-project.png";
+import imgOfFifthProject from "./assets/images of projects/memory-game-project.png";
+import imgOfSixthProject from "./assets/images of projects/formula-volume-ice-image.png";
 
 //For resume
 import myResume from "./uploads/My-Resume-English.pdf";
@@ -141,14 +144,118 @@ const App = () => {
           ProgLang: ``,
         },
       ],
-      demo: ``,
-      code: ``,
+      demo: `https://userlist-with-js.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/Userlist-with-JS`,
     },
     {
       id: 2,
       imgOfProject: imgOfSecondProject,
       project: t("s5.t4"),
       description: t("s5.t5"),
+      usedLang: [
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+      ],
+      demo: `https://hospital-tj.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/hospital-tj`,
+    },
+    {
+      id: 3,
+      imgOfProject: imgOfThirdProject,
+      project: t("s5.t6"),
+      description: t("s5.t7"),
+      usedLang: [
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+      ],
+      demo: `https://post-office.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/Post_office`,
+    },
+    {
+      id: 4,
+      imgOfProject: imgOfFourthProject,
+      project: t("s5.t8"),
+      description: t("s5.t9"),
+      usedLang: [
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+      ],
+      demo: `https://kamilnurmatov.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/my_first_project`,
+    },
+    {
+      id: 5,
+      imgOfProject: imgOfFifthProject,
+      project: t("s5.t10"),
+      description: t("s5.t11"),
+      usedLang: [
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+        {
+          imgProgLang: ``,
+          ProgLang: ``,
+        },
+      ],
+      demo: `https://formula-ice.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/Formulas-for-University`,
+    },
+    {
+      id: 6,
+      imgOfProject: imgOfSixthProject,
+      project: t("s5.t12"),
+      description: t("s5.t13"),
       usedLang: [
         {
           imgProgLang: ``,
@@ -1193,34 +1300,41 @@ const App = () => {
                     />
                   </div>
                   <div className="block_texts flex flex-col gap-1">
-                    <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
+                    <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000] duration-[0.7s]">
                       {item.project}
                     </h1>
-                    <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000] max-w-[90rem]">
+                    <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000] max-w-[90rem] duration-[0.7s]">
                       {item.description}
                     </p>
+                    <div className="block_programming_languages"></div>
+                    <div className="block_code_and_demo flex justify-center gap-3 mt-3">
+                      <a
+                        href={item.code}
+                        className="code_link flex items-center gap-1 text-[#fff] dark:text-[#000] duration-[0.7s]"
+                      >
+                        <FiGithub
+                          style={{
+                            fontSize: 30,
+                          }}
+                        />
+                        Code
+                      </a>
+                      <a
+                        href={item.demo}
+                        className="demo_link flex items-center gap-1 text-[#fff] dark:text-[#000] duration-[0.7s]"
+                      >
+                        <RiLiveLine
+                          style={{
+                            fontSize: 30,
+                          }}
+                        />
+                        Demo
+                      </a>
+                    </div>
                   </div>
                 </div>
               );
             })}
-
-            {/* <div className="second_project rounded-[20px] md:grid md:grid-cols-[40%_60%] flex flex-col-reverse gap-3 border-[2px] border-[#e7e5e5] p-[20px]">
-              <div className="block_texts flex flex-col gap-1">
-                <h1 className="text-[22px] font-[600] text-center text-[#fff] dark:text-[#000]">
-                  {t("s5.t4")}
-                </h1>
-                <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000]">
-                  {t("s5.t5")}
-                </p>
-              </div>
-              <div className="block_image w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] overflow-hidden rounded-[20px] cursor-pointer">
-                <img
-                  src={imgOfSecondProject}
-                  className="rounded-[20px] max-w-[100%] h-auto translate-y-0 hover:translate-y-[-68%] duration-[5s]"
-                  alt=""
-                />
-              </div>
-            </div> */}
           </div>
         </section>
         <section className="section_6 mt-[60px]" id="contacts">
