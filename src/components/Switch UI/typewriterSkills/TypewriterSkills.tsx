@@ -8,7 +8,6 @@ const TypewriterSkills = () => {
   return (
     <div
       className="poppins text-[#FFFFFF] text-[20px] font-[300] duration-[0.5s] dark:text-[#1f1f1f]"
-      //   style={{ fontSize: "24px", fontFamily: "monospace", color: `white` }}
     >
       <Typewriter
         options={{
