@@ -32,12 +32,27 @@ import imgOfFourthProject from "./assets/images of projects/kamil-nurmatov-proje
 import imgOfFifthProject from "./assets/images of projects/memory-game-project.png";
 import imgOfSixthProject from "./assets/images of projects/formula-volume-ice-image.png";
 
+//Images of programming languages
+// import imgOfHTML from "./assets/img_programming_languages/html.png";
+// import imgOfCSS from "./assets/img_programming_languages/css.png";
+// import imgOfJS from "./assets/img_programming_languages/javascript.png";
+// import iconOfTS from "./assets/img_programming_languages/typescript.svg";
+// import imgOfTS from "./assets/img_programming_languages/typescript.jpeg";
+// import imgOfNextJS from "./assets/img_programming_languages/Next-JS.png";
+// import iconOfNextJS from "./assets/img_programming_languages/next-js.svg";
+// import imgOfReactJS from "./assets/img_programming_languages/React-JS.png";
+// import imgOfReduxToolkit from "./assets/img_programming_languages/redux.png";
+// import iconOfReduxToolkit from "./assets/img_programming_languages/redux.svg";
+// import imgOFSASS from "./assets/img_programming_languages/sass.png";
+// import imgOFTailwindCSS from "./assets/img_programming_languages/tailwindcss.png";
+
+
 //For resume
 import myResume from "./uploads/My-Resume-English.pdf";
 
 import Switcher from "./components/Switch UI/Switcher";
 import { useTranslation } from "react-i18next";
-import TypewriterSkills from "./components/Switch UI/typewriterSkills/TypewriterSkills";
+import TypewriterSkills from "./components/typewriterSkills/TypewriterSkills";
 // import { Link } from "react-router-dom";
 
 const App = () => {
@@ -130,20 +145,16 @@ const App = () => {
       description: t("s5.t3"),
       usedLang: [
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=html`,
+          ProgLang: `HTML`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=css`,
+          ProgLang: `CSS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
-        },
-        {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=js`,
+          ProgLang: `JS`,
         },
       ],
       demo: `https://userlist-with-js.vercel.app/`,
@@ -156,20 +167,16 @@ const App = () => {
       description: t("s5.t5"),
       usedLang: [
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=react`,
+          ProgLang: `React JS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=tailwind`,
+          ProgLang: `TailwindCSS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
-        },
-        {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=css`,
+          ProgLang: `CSS`,
         },
       ],
       demo: `https://hospital-tj.vercel.app/`,
@@ -182,20 +189,16 @@ const App = () => {
       description: t("s5.t7"),
       usedLang: [
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=react`,
+          ProgLang: `React JS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=tailwind`,
+          ProgLang: `TailwindCSS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
-        },
-        {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=css`,
+          ProgLang: `CSS`,
         },
       ],
       demo: `https://post-office.vercel.app/`,
@@ -208,20 +211,16 @@ const App = () => {
       description: t("s5.t9"),
       usedLang: [
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=react`,
+          ProgLang: `React JS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=tailwind`,
+          ProgLang: `TailwindCSS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
-        },
-        {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=css`,
+          ProgLang: `CSS`,
         },
       ],
       demo: `https://kamilnurmatov.vercel.app/`,
@@ -234,20 +233,16 @@ const App = () => {
       description: t("s5.t11"),
       usedLang: [
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=html`,
+          ProgLang: `HTML`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=css`,
+          ProgLang: `CSS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
-        },
-        {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=js`,
+          ProgLang: `JS`,
         },
       ],
       demo: `https://memory-game-fruits.vercel.app/`,
@@ -260,20 +255,16 @@ const App = () => {
       description: t("s5.t13"),
       usedLang: [
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=react`,
+          ProgLang: `React JS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=tailwind`,
+          ProgLang: `TailwindCSS`,
         },
         {
-          imgProgLang: ``,
-          ProgLang: ``,
-        },
-        {
-          imgProgLang: ``,
-          ProgLang: ``,
+          imgProgLang: `https://skillicons.dev/icons?i=css`,
+          ProgLang: `CSS`,
         },
       ],
       demo: `https://formula-ice.vercel.app/`,
@@ -1309,7 +1300,16 @@ const App = () => {
                     <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000] max-w-[90rem] duration-[0.7s]">
                       {item.description}
                     </p>
-                    <div className="block_programming_languages"></div>
+                    <div className="block_programming_languages flex justify-center mt-3 gap-5">
+                      {
+                        item.usedLang.map((e, index:number) => {
+                          return <div key={index} className="flex items-center gap-3">
+                            <img className="w-[30px] object-contain" src={e.imgProgLang} alt="" />
+                            <h1 className="text-[#fff] dark:text-[#000] duration-[0.7s]">{ e.ProgLang}</h1>
+                            </div>
+                          })
+                      }
+                    </div>
                     <div className="block_code_and_demo flex justify-center gap-3 mt-3">
                       <a
                         href={item.code}
