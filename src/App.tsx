@@ -1286,10 +1286,10 @@ const App = () => {
                     index % 2 !== 0 && `md:flex-row-reverse`
                   } sm:flex-wrap md:flex-nowrap border-[2px] border-[#e7e5e5] p-[20px] gap-3`}
                 >
-                  <div className="block_image w-auto h-[160px] sm:h-[240px] box-amazon overflow-hidden rounded-[20px]">
+                  <div className="block_image w-auto sm:h-[160px] md:h-[220px] box-amazon overflow-hidden rounded-[20px]">
                     <img
                       src={item.imgOfProject}
-                      className="rounded-[20px] max-w-[100%] h-auto translate-y-0 hover:translate-y-[-80%] duration-[5s] cursor-pointer"
+                      className="rounded-[20px] max-w-[100%] h-auto translate-y-0 md:hover:translate-y-[-40%] duration-[5s] cursor-pointer"
                       alt=""
                     />
                   </div>
@@ -1300,7 +1300,7 @@ const App = () => {
                     <p className="text-[16px] font-[400] text-center text-[#fff] dark:text-[#000] max-w-[90rem] duration-[0.7s]">
                       {item.description}
                     </p>
-                    <div className="block_programming_languages flex justify-center mt-3 gap-5">
+                    <div className="block_programming_languages flex justify-center mt-3 gap-5 flex-wrap">
                       {
                         item.usedLang.map((e, index:number) => {
                           return <div key={index} className="flex items-center gap-3">
