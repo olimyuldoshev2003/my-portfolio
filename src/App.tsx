@@ -273,6 +273,7 @@ const App = () => {
   ];
 
   return (
+    <>
     <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
       <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
         <div className="block_header md:p-[20px_60px] sm:p-[20px_8px] flex justify-between max-w-[1440px] m-[0_auto]">
@@ -283,7 +284,7 @@ const App = () => {
               setMenuClass("links_hidden");
               setIsMenuClicked(false);
             }}
-          >
+            >
             <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.5s]">
               Olim Karomatov
             </h1>
@@ -292,6 +293,7 @@ const App = () => {
             <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
               <li>
                 <a
+            
                   className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#home"
                   
@@ -1458,7 +1460,8 @@ const App = () => {
         </div>
         <div className="footer_block_2"></div>
       </footer>
-    </div>
+      </div>
+      </>
   );
 };
 
