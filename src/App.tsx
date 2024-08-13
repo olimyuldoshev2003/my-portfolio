@@ -37,6 +37,7 @@ import myResume from "./uploads/My-Resume-English.pdf";
 
 import Switcher from "./components/Switch UI/Switcher";
 import { useTranslation } from "react-i18next";
+import TypewriterSkills from "./components/Switch UI/typewriterSkills/TypewriterSkills";
 // import { Link } from "react-router-dom";
 
 const App = () => {
@@ -55,6 +56,28 @@ const App = () => {
   const [menu_class, setMenuClass] = useState<string>("links_hidden");
   const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
+  //For back to top button
+  const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
+
+  //States for programming languages
+  const [CPlusPlus] = useState<number>(79);
+  const [HTML] = useState<number>(80);
+  const [CSS] = useState<number>(85);
+  const [SCSS] = useState<number>(83);
+  const [SASS] = useState<number>(86);
+  const [JS] = useState<number>(75);
+  const [TS] = useState<number>(85);
+  const [reactJS] = useState<number>(77);
+  const [reactTS] = useState<number>(85);
+  const [redux] = useState<number>(81);
+  const [git] = useState<number>(84);
+  const [gitHub] = useState<number>(82);
+  const [tailwind] = useState<number>(88);
+  const [materialUI] = useState<number>(86);
+  const [antDesign] = useState<number>(75);
+  const [RESTAPI] = useState<number>(82);
+  const [nextJS] = useState<number>(50);
+
   function changeMenu() {
     if (!isMenuClicked) {
       setBurgerClass("clicked");
@@ -68,9 +91,6 @@ const App = () => {
   }
 
   // For closing the menu outside of the modal menu
-
-  //For back to top button
-  const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
 
   useEffect(() => {
     window.onscroll = () => {
@@ -101,24 +121,6 @@ const App = () => {
   // const [antDesign, setAntDesign] = useState<number>(75);
   // const [RESTAPI, setRESTAPI] = useState<number>(82);
   // const [nextJS, setNextJS] = useState<number>(50);
-
-  const [CPlusPlus] = useState<number>(79);
-  const [HTML] = useState<number>(80);
-  const [CSS] = useState<number>(85);
-  const [SCSS] = useState<number>(83);
-  const [SASS] = useState<number>(86);
-  const [JS] = useState<number>(75);
-  const [TS] = useState<number>(85);
-  const [reactJS] = useState<number>(77);
-  const [reactTS] = useState<number>(85);
-  const [redux] = useState<number>(81);
-  const [git] = useState<number>(84);
-  const [gitHub] = useState<number>(82);
-  const [tailwind] = useState<number>(88);
-  const [materialUI] = useState<number>(86);
-  const [antDesign] = useState<number>(75);
-  const [RESTAPI] = useState<number>(82);
-  const [nextJS] = useState<number>(50);
 
   const projects = [
     {
@@ -301,6 +303,7 @@ const App = () => {
                 <a
                   className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
                   href="#home"
+                  
                 >
                   {t("h.t1")}
                 </a>
@@ -634,15 +637,15 @@ const App = () => {
             <h1 className="poppins text-[#FFFFFF] md:text-[60px] sm:text-[34px] font-[600] dark:text-[#1f1f1f] duration-[0.5s]">
               {t("s1.t2")}
             </h1>
-            <h5 className="poppins text-[#FFFFFF] text-[20px] font-[300] duration-[0.5s] dark:text-[#1f1f1f]">
+            {/* <h5 className="poppins text-[#FFFFFF] text-[20px] font-[300] duration-[0.5s] dark:text-[#1f1f1f]">
               {t("s1.t3")}
-            </h5>
-            <object
+            </h5> */}
+            <TypewriterSkills/>
+            {/* <object
               data={myResume}
               type="application/pdf"
               className="max-w-[270px]"
-            ></object>
-            {/* <embed src={myResume} type="" /> */}
+            ></object> */}
             <a href={myResume} download={myResume}>
               <button className="p-[16px_13px] for_btn text-[23px] font-[400] text-[#fff] duration-[0.5s]">
                 {t("s1.t4")}
