@@ -97,9 +97,11 @@ const App = () => {
     if (!isMenuClicked) {
       setBurgerClass("clicked");
       setMenuClass("links_visible");
+      document.body.style.overflow = 'hidden';
     } else {
       setBurgerClass("unclicked");
       setMenuClass("links_hidden");
+      document.body.style.overflow = 'unset';
     }
 
     setIsMenuClicked(!isMenuClicked);
@@ -413,7 +415,7 @@ const App = () => {
         </header>
         <div className="for_mobile_size">
           <nav
-            className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed md:top-[80px] sm:top-[71px] z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
+            className={`${menu_class} shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed md:top-[80px] sm:top-[71px] min-h-full z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] py-[20px] lg:hidden`}
           >
             <ul className="sm:flex sm:flex-col sm:gap-[10px] lg:hidden poppins h-[80vh] overflow-y-auto px-4">
               <LinksMobileSize
