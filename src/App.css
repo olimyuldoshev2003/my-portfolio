@@ -45,15 +45,7 @@
   align-items: center;
 }
 
-/* .header { */
-/* transform: translateZ(0); */
-/* -webkit-backdrop-filter: saturate(180%) blur(5px); */
-/* backdrop-filter: saturate(180%) blur(5px); */
-/* background: hsla(0, 0%, 100%, 0.8); */
-/* } */
-
 /* For Menu mobile size */
-
 .burger_menu {
   display: flex;
   flex-direction: column;
@@ -108,7 +100,7 @@
 
 .links_hidden {
   /* transform: translateX(70rem); */
-  transform: translateY(40rem);
+  transform: translateY(70rem);
   /* opacity: 0; */
   transition: all 1s ease;
   pointer-events: none;
