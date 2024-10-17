@@ -27,7 +27,7 @@ const LinksMobileSize: React.FC<ILinksMobileSize> = ({
     return () => {
       window.removeEventListener("hashchange", onHashChange);
     };
-  }, []);
+  }, [currentHash]);
 
   return (
     <a className="" href={pageLink} onClick={closeMenuMobileSize}>

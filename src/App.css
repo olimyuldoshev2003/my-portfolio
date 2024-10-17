@@ -100,7 +100,7 @@
 
 .links_hidden {
   /* transform: translateX(70rem); */
-  transform: translateY(70rem);
+  transform: translateY(80rem);
   /* opacity: 0; */
   transition: all 1s ease;
   pointer-events: none;
