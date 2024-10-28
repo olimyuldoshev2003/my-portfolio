@@ -425,6 +425,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
               <LinksMobileSize
@@ -434,6 +435,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
               <LinksMobileSize
@@ -443,6 +445,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
               <LinksMobileSize
@@ -452,6 +455,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
               <LinksMobileSize
@@ -461,6 +465,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
               <LinksMobileSize
@@ -470,6 +475,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
               <LinksMobileSize
@@ -479,6 +485,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
               <LinksMobileSize
@@ -488,6 +495,7 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
+                  document.body.style.overflow = 'unset';
                 }}
               />
             </ul>
