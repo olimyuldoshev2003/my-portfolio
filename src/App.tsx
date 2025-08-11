@@ -63,8 +63,10 @@ const App = () => {
     i18n.changeLanguage(language);
   };
 
-  //For mobile size menu
+  // Navigation
+  const [currentHash, setCurrentHash] = useState(window.location.hash);
 
+  //For mobile size menu
   const [burger_class, setBurgerClass] = useState<string>(
     "burger_bar unclicked"
   );
@@ -122,6 +124,20 @@ const App = () => {
       }
     };
   }, []);
+
+  useEffect(() => {
+    // Event listener for hash changes
+    const onHashChange = () => {
+      setCurrentHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", onHashChange);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("hashchange", onHashChange);
+    };
+  }, [currentHash]);
 
   //For Courses
 
@@ -299,67 +315,99 @@ const App = () => {
             </a>
             <nav className="flex items-center gap-[10px]">
               <ul className="lg:flex lg:items-center flex-wrap lg:gap-[10px] sm:hidden poppins">
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#home"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#home"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#home">
                     {t("h.t1")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#about"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#about"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#about">
                     {t("h.t2")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#skills"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#skills"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#skills">
                     {t("h.t3")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#language"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#language"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#language">
                     {t("h.t4")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#studies"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#studies"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#studies">
                     {t("h.t5")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#courses"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#courses"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#courses">
                     {t("h.t6")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#projects"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#projects"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#projects">
                     {t("h.t7")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:underline text-[#989898] text-[20px] font-[400] hover:text-[#fff] cursor-pointer duration-[0.5s] dark:text-[gray] dark:hover:text-[#1f1f1f] active:text-[#fff] active:dark:text-[#bea3a3]"
-                    href="#contacts"
-                  >
+                <li
+                  className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px] px-2
+          ${
+            currentHash === "#contacts"
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
+          }`}
+                >
+                  <a className={`text-[20px] font-[400]`} href="#contacts">
                     {t("h.t8")}
                   </a>
                 </li>
