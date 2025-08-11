@@ -93,15 +93,19 @@ const App = () => {
   const [RESTAPI] = useState<number>(82);
   const [nextJS] = useState<number>(50);
 
+  // document.body.classList.add("scroll_visible");
+
   function changeMenu() {
     if (!isMenuClicked) {
       setBurgerClass("clicked");
       setMenuClass("links_visible");
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add("scroll_hidden");
+      document.body.classList.remove("scroll_visible");
     } else {
       setBurgerClass("unclicked");
       setMenuClass("links_hidden");
-      document.body.style.overflow = 'unset';
+      document.body.classList.add("scroll_visible");
+      document.body.classList.remove("scroll_hidden");
     }
 
     setIsMenuClicked(!isMenuClicked);
@@ -280,11 +284,13 @@ const App = () => {
         <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
           <div className="block_header md:p-[20px_60px] sm:p-[20px_8px] flex justify-between max-w-[1440px] m-[0_auto]">
             <a
-              href="#home"
+              href="#"
               onClick={() => {
                 setBurgerClass("unclicked");
                 setMenuClass("links_hidden");
                 setIsMenuClicked(false);
+                document.body.classList.add("scroll_hidden");
+                document.body.classList.remove("scroll_visible");
               }}
             >
               <h1 className="alex_brush text-[#fff] md:text-[28px] sm:text-[19px] font-[400] dark:text-[#1f1f1f] duration-[0.5s]">
@@ -425,7 +431,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
               <LinksMobileSize
@@ -435,7 +442,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
               <LinksMobileSize
@@ -445,7 +453,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
               <LinksMobileSize
@@ -455,7 +464,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
               <LinksMobileSize
@@ -465,7 +475,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
               <LinksMobileSize
@@ -475,7 +486,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
               <LinksMobileSize
@@ -485,7 +497,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
               <LinksMobileSize
@@ -495,7 +508,8 @@ const App = () => {
                   setBurgerClass("unclicked");
                   setMenuClass("links_hidden");
                   setIsMenuClicked(false);
-                  document.body.style.overflow = 'unset';
+                  document.body.classList.add("scroll_visible");
+                  document.body.classList.remove("scroll_hidden");
                 }}
               />
             </ul>

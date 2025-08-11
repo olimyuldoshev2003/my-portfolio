@@ -32,11 +32,11 @@ const LinksMobileSize: React.FC<ILinksMobileSize> = ({
   return (
     <a className="" href={pageLink} onClick={closeMenuMobileSize}>
       <li
-        className={`text-center py-1 text-[#989898] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff] duration-[0.5s] cursor-pointer hover:underline rounded-[5px]
+        className={`text-center py-1 duration-[0.5s] cursor-pointer hover:underline rounded-[5px]
           ${
             pageLink === currentHash
-              ? `bg-sky-500 text-[#fff] underline`
-              : `hover:bg-sky-500 hover:text-[#fff]`
+              ? `bg-sky-500 text-[#fff] dark:text-[#fff] underline`
+              : `hover:bg-sky-500 text-[#989898] hover:text-[#fff] dark:text-[gray] dark:hover:text-[#fff] active:text-[#fff] active:dark:text-[#fff]`
           }`}
       >
         <a

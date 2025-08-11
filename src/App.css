@@ -24,6 +24,22 @@
   font-family: "Questrial", sans-serif;
 }
 
+/* Body */
+
+.scroll_hidden {
+  overflow: hidden;
+}
+
+.scroll_visible {
+  overflow: unset;
+}
+
+@media only screen and (min-width: 1024px) {
+  .scroll_hidden {
+    overflow: unset;
+  }
+}
+
 .for_btn {
   border-radius: 10px;
   background: var(--Color, linear-gradient(180deg, #15b9b9 0%, #3c1dff 100%));
