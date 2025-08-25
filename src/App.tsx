@@ -31,6 +31,7 @@ import imgOfThirdProject from "./assets/images of projects/post-office-project.p
 import imgOfFourthProject from "./assets/images of projects/kamil-nurmatov-project.png";
 import imgOfFifthProject from "./assets/images of projects/memory-game-project.png";
 import imgOfSixthProject from "./assets/images of projects/formula-volume-ice-image.png";
+import imgOfSeventhProject from "./assets/images of projects/website_countries.png";
 
 //Images of programming languages
 // import imgOfHTML from "./assets/img_programming_languages/html.png";
@@ -292,12 +293,42 @@ const App = () => {
       demo: `https://formula-ice.vercel.app/`,
       code: `https://github.com/olimyuldoshev2003/Formulas-for-University`,
     },
+    {
+      id: 7,
+      imgOfProject: imgOfSeventhProject,
+      project: t("s5.t14"),
+      description: t("s5.t15"),
+      usedLang: [
+        {
+          imgProgLang: `https://skillicons.dev/icons?i=react`,
+          ProgLang: `React JS`,
+        },
+        {
+          imgProgLang: `https://skillicons.dev/icons?i=react`,
+          ProgLang: `React TS`,
+        },
+        {
+          imgProgLang: `https://skillicons.dev/icons?i=tailwind`,
+          ProgLang: `TailwindCSS`,
+        },
+        {
+          imgProgLang: `https://skillicons.dev/icons?i=css`,
+          ProgLang: `CSS`,
+        },
+        {
+          imgProgLang: `https://skillicons.dev/icons?i=redux`,
+          ProgLang: `Redux Toolkit`,
+        },
+      ],
+      demo: `https://website-countries.vercel.app/`,
+      code: `https://github.com/olimyuldoshev2003/website-countries`,
+    },
   ];
 
   return (
     <>
-      <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px]">
-        <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0]">
+      <div className="bg-[#1f1f1f] dark:bg-[#fff] pb-[30px] duration-[0.5s]">
+        <header className="header shadow-[0px_0px_10px_0.1px] shadow-black/10 fixed top-0 z-50 w-[100%] backdrop-saturate-[180%] backdrop-blur-[5px] bg-[#0000006c] dark:bg-[#f0eeeec0] duration-[0.5s]">
           <div className="block_header md:p-[20px_60px] sm:p-[20px_8px] flex justify-between max-w-[1440px] m-[0_auto]">
             <a
               href="#"

@@ -74,7 +74,9 @@
     "t10": "Memory Game",
     "t11": "This game is created with pure HTML, CSS and JS and created for people, who loves playing games. This is the simple game and people can play this game.",
     "t12": "Formulas for volume of Ice",
-    "t13": "In this project I used the library React JS and also this project is created with Tajik language. This project is created for solving some mathematical formulas (the volume of ice), and the mathematical formulas are given. Only we need to add the number and click the submit button."
+    "t13": "In this project I used the library React JS and also this project is created with Tajik language. This project is created for solving some mathematical formulas (the volume of ice), and the mathematical formulas are given. Only we need to add the number and click the submit button.",
+    "t14": "Website about countries",
+    "t15": "This project is created with React TS and for showing the countries of the world. With this project you can find any country of the world, about that country, its capital, its population, its area and so on. This project is created with English language. And also the database (the server side) is used the free API of REST Countries."
   },
   "s6": {
     "t1": "Contact with me",
