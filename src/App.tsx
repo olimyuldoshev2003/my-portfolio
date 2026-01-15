@@ -85,8 +85,9 @@ const App = () => {
   const [SASS] = useState<number>(86);
   const [JS] = useState<number>(75);
   const [TS] = useState<number>(85);
-  const [reactJS] = useState<number>(77);
+  const [reactJS] = useState<number>(85);
   const [reactTS] = useState<number>(85);
+  const [reactNative] = useState<number>(85);
   const [redux] = useState<number>(81);
   const [git] = useState<number>(84);
   const [gitHub] = useState<number>(82);
@@ -888,6 +889,26 @@ const App = () => {
                   </div>
                 </div>
                 <div className="block_2_my_skills">
+                  <div className="reactNative flex items-center md:gap-5 sm:gap-2">
+                    <div className="block_1">
+                      <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
+                    </div>
+                    <div className="block_2 flex flex-col gap-2">
+                      <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
+                        React Native
+                      </h1>
+                      <meter
+                        value={reactNative}
+                        max={100}
+                        className="sm:w-[180px] md:w-[280px] h-[30px]"
+                      ></meter>
+                    </div>
+                    <div className="block_3">
+                      <h1 className="text-[26px] text-[#fff] font-[600] dark:text-[#000] duration-[0.5s]">
+                        {reactNative}%
+                      </h1>
+                    </div>
+                  </div>
                   <div className="redux flex items-center md:gap-5 sm:gap-2">
                     <div className="block_1">
                       <VscVerifiedFilled className="text-[#4040ff] text-[40px]" />
@@ -1362,7 +1383,7 @@ const App = () => {
                 </p>
               </a>
               <a
-                href="https://web.whatsapp.com/992919697875"
+                href="https://web.whatsapp.com/message/992919697875"
                 className="whatsapp border-[1px] border-[#fffbfb88] dark:border-[#e4e4e4] w-[100%] rounded-[30px] flex flex-col justify-center items-center p-[20px] shadow-2xl hover:bg-[#575656] dark:hover:bg-[#e7e5e5] cursor-pointer"
               >
                 <FaWhatsapp className="text-[#fff] dark:text-[#000] text-[33px] duration-[0.5s]" />
